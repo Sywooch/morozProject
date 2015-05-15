@@ -22,4 +22,6 @@ return [
     'News Category'=>'Категория',
     'Date Create'=>'Дата создания',
     'Password'=>'Пароль',
+    'Pages'=>'Страницы',
+    'Create Pages'=>'Создать страницу',
 ];
