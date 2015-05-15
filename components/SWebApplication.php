@@ -28,7 +28,7 @@ class SWebApplication extends Application {
         $cacheKey = 'module_data';
         $modules    = Yii::$app->cache->get($cacheKey);
         if(!$modules){
-            $modules = array("modules"=>array("admin"=>'app\modules\admin\AdminModule',"news"=>'app\modules\news\NewsModule'));
+            $modules = array("modules"=>array("admin"=>'app\modules\admin\AdminModule',"news"=>'app\modules\news\NewsModule',"pages"=>'app\modules\pages\PagesModule' ));
             Yii::$app->cache->set($cacheKey, $modules, 3600);
         }
         if($modules){
