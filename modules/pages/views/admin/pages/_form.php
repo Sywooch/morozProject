@@ -2,17 +2,25 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use app\modules\pages\models\Tree;
+use yii\helpers\ArrayHelper;
 
 /* @var $this yii\web\View */
 /* @var $model app\modules\pages\models\Tree */
 /* @var $form yii\widgets\ActiveForm */
+
+$items_first = array("0"=>"Корневая");
+$items_db = ArrayHelper::map(Tree::find()->all(),'id','name');
+$items = array_merge($items_first,$items_db);
 ?>
 
 <div class="tree-form">
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'parent')->textInput(['maxlength' => 10]) ?>
+    <?//= $form->field($model, 'parent')->textInput(['maxlength' => 10]) ?>
+
+    <?= $form->field($model, 'parent')->dropDownList($items) ?>
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => 255]) ?>
 
@@ -20,7 +28,14 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'link')->textInput(['maxlength' => 255]) ?>
 
-    <?= $form->field($model, 'html')->textarea(['rows' => 6]) ?>
+    <?//= $form->field($model, 'html')->textarea(['rows' => 6]) ?>
+    <?=$form->field($model, 'html')->widget(
+        'trntv\aceeditor\AceEditor',
+        [
+            'mode'=>'php',
+            'theme'=>'twilight'
+        ]
+    )?>
 
     <?= $form->field($model, 'metawords')->textInput(['maxlength' => 255]) ?>
 

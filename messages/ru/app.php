@@ -24,4 +24,5 @@ return [
     'Password'=>'Пароль',
     'Pages'=>'Страницы',
     'Create Pages'=>'Создать страницу',
+    'Create Tree'=>'Создать страницу',
 ];

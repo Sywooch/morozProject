@@ -11,4 +11,11 @@ $config = require(__DIR__ . '/../config/web.php');
 
 //(new yii\web\Application($config))->run();
 require '../components/SWebApplication.php';
+
+function vd($var, $exit = true){
+    $dumper = new yii\helpers\BaseVarDumper();
+    echo $dumper::dump($var, 10, true);
+    if ($exit)
+        exit;
+}
 (new app\components\SWebApplication($config))->run();

@@ -238,8 +238,15 @@ class Nav extends Widget
             if ($route[0] !== '/' && Yii::$app->controller) {
                 $route = Yii::$app->controller->module->getUniqueId() . '/' . $route;
             }
+            $curUrl = Yii::$app->request->pathInfo;
+            if(isset(Yii::$app->request->queryString)&&!empty(Yii::$app->request->queryString)){
+                $curUrl = Yii::$app->request->pathInfo.'?'.Yii::$app->request->queryString;
+            }
 
-            if (ltrim($route, '/') !== ltrim($this->route, '/')) {
+            /*if (ltrim($route, '/') !== ltrim($this->route, '/')) {
+                return false;
+            }*/
+            if (ltrim($route, '/') !== $curUrl) {
                 return false;
             }
 
