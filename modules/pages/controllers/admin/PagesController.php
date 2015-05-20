@@ -81,8 +81,17 @@ class PagesController extends BaseAdminController
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        $oldparent = $model->parent;
+        if ($model->load(Yii::$app->request->post())) {
+            $Cpage = Tree::find()->where(['parent'=> $model->id])->all();
+            //Если есть дети
+            if($Cpage){
+                foreach($Cpage as $c){
+                    $c->parent=$oldparent;
+                    $c->save();
+                }
+            }
+            $model->save();
             return $this->redirect(['update', 'id' => $model->id]);
         } else {
             return $this->render('update', [

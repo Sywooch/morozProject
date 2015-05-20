@@ -38,9 +38,9 @@ class Tree extends \yii\db\ActiveRecord
             [['parent', 'sort'], 'integer'],
             [['name', 'title', 'link', 'html', 'metawords', 'metadesc', 'createdate'], 'required'],
             [['html'], 'string'],
-            [['createdate', 'updatedate'], 'safe'],
+            [['createdate'], 'safe'],
             [['name', 'title', 'link', 'metawords', 'metadesc'], 'string', 'max' => 255],
-            [['link'], 'unique']
+            [['link'], 'unique','message' => 'Ссылка должна быть уникальна!']
         ];
     }
 
@@ -60,7 +60,7 @@ class Tree extends \yii\db\ActiveRecord
             'metadesc' => Yii::t('app', 'Metadesc'),
             'sort' => Yii::t('app', 'Sort'),
             'createdate' => Yii::t('app', 'Createdate'),
-            'updatedate' => Yii::t('app', 'Updatedate'),
+            //'updatedate' => Yii::t('app', 'Updatedate'),
         ];
     }
 }

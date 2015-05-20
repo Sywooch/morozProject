@@ -49,6 +49,7 @@ class NewsCategorySearch extends NewsCategory
             'query' => $query,
         ]);
 
+
         $this->load($params);
 
         if (!$this->validate()) {

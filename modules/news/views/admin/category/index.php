@@ -18,6 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="add-rows btn-add"><span class="glyphicon glyphicon-plus-sign"></span></div>
         <div class="search-rows"><span class="glyphicon glyphicon-search"></span></div>
     </div>
+
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -32,6 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'name',
             'link',
             'visible',
+
             // 'sort',
 
             ['class' => 'yii\grid\ActionColumn'],

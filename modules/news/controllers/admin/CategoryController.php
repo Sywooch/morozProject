@@ -89,8 +89,18 @@ class CategoryController extends BaseAdminController
         $searchModel = new NewsCategorySearch();
         $dataProvider = $searchModel->category($id);
         $model = $this->findModel($id);
+        $oldparent = $model->parent;
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+            $Ccat = NewsCategory::find()->where(['parent'=> $model->id])->all();
+            //Если есть дети
+            if($Ccat){
+                foreach($Ccat as $c){
+                    $c->parent=$oldparent;
+                    $c->save();
+                }
+            }
+            $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [

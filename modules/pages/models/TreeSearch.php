@@ -19,7 +19,7 @@ class TreeSearch extends Tree
     {
         return [
             [['id', 'parent', 'sort'], 'integer'],
-            [['name', 'title', 'link', 'html', 'metawords', 'metadesc', 'createdate', 'updatedate'], 'safe'],
+            [['name', 'title', 'link', 'html', 'metawords', 'metadesc', 'createdate'], 'safe'],
         ];
     }
 
@@ -60,7 +60,7 @@ class TreeSearch extends Tree
             'parent' => $this->parent,
             'sort' => $this->sort,
             'createdate' => $this->createdate,
-            'updatedate' => $this->updatedate,
+            //'updatedate' => $this->updatedate,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
