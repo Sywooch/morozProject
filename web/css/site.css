@@ -1,92 +1,151 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Condensed&subset=latin,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Cuprum&subset=latin,cyrillic);
 html,
 body {
-    height: 100%; font-family: 'Roboto Condensed', sans-serif;
+    height: 100%; font-family: 'Cuprum', sans-serif; background: #e6e6e6;
 }
 
 .wrap {
     min-height: 100%;
     height: auto;
-    margin: 0 auto -60px;
-    padding: 0 0 60px;
+    max-width: 1260px; margin: 0 auto; line-height: normal; min-width: 1000px;
 }
 
-.wrap > .container {
-    padding: 70px 15px 20px;
+.forum-header{
+    height: 86px; background: #fff; padding: 0 30px;
+}
+.forum-logo{
+   width: 20%; float: left;
+}
+.link-logo{
+    display: block; padding: 10px 0 0 0;
+}
+.forum-logo img{
+    max-width: 100%;
+}
+.time-delivery{
+    font-size: 16px; width: 30%; float: left;
+}
+.time-delivery p{
+    padding: 20px 15px 0 15px; margin: 0; color: #464646;
+}
+.time-delivery p span{
+    color:#8d340e;
+}
+.forum-call{
+    width: 25%; float: left;  position: relative;
+}
+.call-img{
+    position: absolute; top:20px; right:165px;
+}
+.link-call{
+    position: absolute; top:30px; right: 0; border-bottom: 1px dashed #8d340e;
+}
+.link-call a{
+    font-size: 21px; color:#8d340e;
+}
+.link-call a:hover,.link-call a:focus{
+    text-decoration: none; outline: none;
+}
+.forum-phone{
+    width: 25%; float: right; text-align: right;
+}
+.forum-phone p{
+    margin: 0;
+}
+.forum-phone p.phone-text{
+    color:#f59e00; font-size: 16px; padding: 10px 0 0 0;
+}
+.forum-phone p.phone-number{
+    font-size: 32px; color: #464646;
+}
+.forum-phone p.phone-number span{
+    color:#8d340e;
+}
+.myclose{
+    color:#8d340e;
+}
+.close{
+    opacity: 1;
 }
 
-.footer {
-    height: 60px;
-    background-color: #f5f5f5;
-    border-top: 1px solid #ddd;
-    padding-top: 20px;
+.line-menu{
+    height: 50px; background: #f9db6a;
+}
+.forum-menu-catalog{
+    width:30%; height: 50px; float: left; background: #8d340e url('/image/mc.jpg');
+    background-repeat: no-repeat; background-position: right;
+
+}
+.forum-menu-pages{
+    width:45%; height: 50px; float: left; background: #f59e00 url('/image/mc2.jpg');
+    background-repeat: no-repeat; background-position: right;
+}
+.forum-cart{
+    width:25%; height: 50px; float: left;
 }
 
-.jumbotron {
-    text-align: center;
-    background-color: transparent;
+
+/* MEDIA
+------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width:1020px){
+
 }
 
-.jumbotron .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+
+@media only screen and (max-width:950px){
+    .forum-phone p.phone-text {
+        font-size: 13px;
+        padding: 18px 0px 0px;
+    }
+    .forum-phone p.phone-number {
+        font-size: 26px;
+    }
 }
 
-.not-set {
-    color: #c55;
-    font-style: italic;
+
+@media only screen and (max-width:820px){
+    .forum-header{
+        padding: 0 5px;
+    }
+    .time-delivery {
+        font-size: 14px;
+    }
+    .link-call a {
+        font-size: 18px;
+    }
+    .call-img {
+        right: 140px;
+    }
+    .forum-call {
+        width: 24%;
+    }
+    .forum-phone p.phone-text {
+        font-size: 13px;
+        padding: 18px 0px 0px;
+    }
+    .forum-phone p.phone-number {
+        font-size: 26px;
+    }
 }
 
-/* add sorting icons to gridview sort links */
-a.asc:after, a.desc:after {
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    padding-left: 5px;
-}
-
-a.asc:after {
-    content: /*"\e113"*/ "\e151";
-}
-
-a.desc:after {
-    content: /*"\e114"*/ "\e152";
-}
-
-.sort-numerical a.asc:after {
-    content: "\e153";
-}
-
-.sort-numerical a.desc:after {
-    content: "\e154";
-}
-
-.sort-ordinal a.asc:after {
-    content: "\e155";
-}
-
-.sort-ordinal a.desc:after {
-    content: "\e156";
-}
-
-.grid-view th {
-    white-space: nowrap;
-}
-
-.hint-block {
-    display: block;
-    margin-top: 5px;
-    color: #999;
-}
-
-.error-summary {
-    color: #a94442;
-    background: #fdf7f7;
-    border-left: 3px solid #eed3d7;
-    padding: 10px 20px;
-    margin: 0 0 15px 0;
+@media only screen and (max-width:768px){
+    .time-delivery p{
+        padding: 15px 15px 0 15px;
+    }
+    .link-call a {
+        font-size: 18px;
+    }
+    .call-img {
+        right: 140px;
+    }
+    .forum-call {
+        width: 24%;
+    }
+    .forum-phone p.phone-text {
+        font-size: 13px;
+        padding: 18px 0px 0px;
+    }
+    .forum-phone p.phone-number {
+        font-size: 26px;
+    }
 }

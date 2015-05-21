@@ -5,6 +5,7 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
 
+
 /* @var $this \yii\web\View */
 /* @var $content string */
 
@@ -24,8 +25,10 @@ AppAsset::register($this);
 
 <?php $this->beginBody() ?>
     <div class="wrap">
+        <?= $this->render('header') ?>
+
         <?php
-            NavBar::begin([
+            /*NavBar::begin([
                 'brandLabel' => 'Магазин',
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
@@ -46,23 +49,20 @@ AppAsset::register($this);
                             'linkOptions' => ['data-method' => 'post']],
                 ],
             ]);
-            NavBar::end();
+            NavBar::end();*/
         ?>
 
-        <div class="container">
-            <?= Breadcrumbs::widget([
+        <!--div class="container"-->
+            <?/*= Breadcrumbs::widget([
                 'homeLink'=>['label'=>'Главная','url'=>'/'],
                 'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-            ]) ?>
+            ]) */?>
             <?= $content ?>
-        </div>
+        <!--/div-->
+        <?= $this->render('footer') ?>
     </div>
 
-    <footer class="footer">
-        <div class="container">
-            <p class="pull-left">&copy; Моя компания <?= date('Y') ?></p>
-        </div>
-    </footer>
+
 
 <?php $this->endBody() ?>
 </body>

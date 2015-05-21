@@ -66,7 +66,7 @@ $config = [
         'db' => require(__DIR__ . '/db.php'),
         'view' => [
             'theme' => [
-                'pathMap' => ['@app/views' => '@app/themes/'.$theme,'@app/modules' => '@app/themes/'.$theme.'/modules'],
+                'pathMap' => ['@app/views' => '@app/themes/'.$theme,'@app/modules' => '@app/themes/'.$theme.'/modules','@app/components/widgets' => '@app/themes/'.$theme.'/widgets'],
                 'baseUrl' => '@web/themes/'.$theme,
             ],
         ],
