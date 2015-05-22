@@ -1,5 +1,7 @@
 <?php
 use app\components\widgets\CallWidget;
+use app\components\widgets\MenuCatalogWidget;
+use app\components\widgets\MenuPagesWidget;
 ?>
 
 <div class="forum-header">
@@ -14,7 +16,11 @@ use app\components\widgets\CallWidget;
     </div>
 </div>
 <div class="line-menu">
-    <div class="forum-menu-catalog"></div>
-    <div class="forum-menu-pages"></div>
+    <div class="forum-menu-catalog">
+        <?= MenuCatalogWidget::widget(); ?>
+    </div>
+    <div class="forum-menu-pages">
+        <?= MenuPagesWidget::widget(); ?>
+    </div>
     <div class="forum-cart"></div>
 </div>
