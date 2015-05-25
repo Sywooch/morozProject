@@ -7,7 +7,7 @@ use yii\bootstrap\ActiveForm;
 /* @var $model app\models\LoginForm */
 
 $this->title = 'Вход';
-$this->params['breadcrumbs'][] = $this->title;
+//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-login">
     <h1>Вход</h1>
@@ -16,10 +16,10 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php $form = ActiveForm::begin([
         'id' => 'login-form',
-        'options' => ['class' => 'form-horizontal'],
+        //'options' => ['class' => 'form-horizontal'],
         'fieldConfig' => [
-            'template' => "{label}\n<div class=\"col-lg-3\">{input}</div>\n<div class=\"col-lg-8\">{error}</div>",
-            'labelOptions' => ['class' => 'col-lg-1 control-label'],
+            //'template' => "{label}\n<div class=\"col-lg-3\">{input}</div>\n<div class=\"col-lg-8\">{error}</div>",
+            //'labelOptions' => ['class' => 'col-lg-1 control-label'],
         ],
     ]); ?>
 
@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
 
     <div class="form-group">
-        <?= Html::submitButton('Войти', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+        <?= Html::submitButton('Войти', ['class' => 'btn btn-yellow', 'name' => 'login-button']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

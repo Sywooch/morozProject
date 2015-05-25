@@ -2,6 +2,8 @@
 use app\components\widgets\CallWidget;
 use app\components\widgets\MenuCatalogWidget;
 use app\components\widgets\MenuPagesWidget;
+use app\components\widgets\LoginWidget;
+use app\components\widgets\CartWidget;
 ?>
 
 <div class="forum-header">
@@ -22,5 +24,7 @@ use app\components\widgets\MenuPagesWidget;
     <div class="forum-menu-pages">
         <?= MenuPagesWidget::widget(); ?>
     </div>
-    <div class="forum-cart"></div>
+    <div class="forum-cart">
+        <?= LoginWidget::widget(); ?> <?= CartWidget::widget(); ?>
+    </div>
 </div>

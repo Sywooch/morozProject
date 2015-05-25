@@ -37,6 +37,9 @@
             }
             return false;
         });
+        $(\"body\").click(function () {
+            $('ul.child').slideUp(300);
+        });
     });
 
 ");?>

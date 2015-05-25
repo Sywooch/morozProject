@@ -7,7 +7,7 @@ body {
 .wrap {
     min-height: 100%;
     height: auto;
-    max-width: 1260px; margin: 0 auto; line-height: normal; min-width: 1000px;
+    max-width: 1260px; margin: 0 auto; line-height: normal; min-width: 1000px; background: #fff;
 }
 
 .forum-header{
@@ -132,7 +132,6 @@ body {
     top: 44px;
     width: 100%;
     padding: 0 0 20px 0;
-    box-shadow: 1px 1px 1px #ccc;
 }
 .child li{
     display: list-item; margin: 0; padding: 0; text-align: left; list-style: none; padding: 8px 10px 0 20px;
@@ -156,6 +155,82 @@ body {
     outline: none;
 }
 
+.login-widget-wrap{
+    width: 40%; float: left;
+}
+.login-widget-wrap a{
+    display: block; padding: 16px 0 0 0; text-align: center; color: #8d340e;
+}
+.login-widget-wrap a:hover,.login-widget-wrap a:focus{
+    text-decoration: none; outline: none;
+}
+
+/* LOGIN
+-------------------------------------------------------------------------------------------------------*/
+.site-login{
+    width: 50%; margin: 30px auto; background: #fff; padding: 20px; border-radius: 4px; box-shadow: 1px 1px 2px #555;
+}
+.site-login h1{
+    margin-top: 0;
+}
+.btn-yellow{
+    background: #F9DB6A; width: 100%; color:#8d340e; font-size: 20px;
+}
+
+/* CART WIDGET
+------------------------------------------------------------------------------------------------------*/
+.cart-widget-wrap{
+    width: 60%; float: left;
+}
+.cart-widget-wrap a{
+    display: block; padding: 13px 0 0 0; text-align: left; color: #8d340e;
+}
+.img-cart{
+    background: url('/image/minicart.jpg'); background-repeat: no-repeat;
+    background-position: left bottom; display: inline-block; width: 25px; height: 18px; margin-right: 3px;
+}
+.cart-widget-wrap a:hover,.login-widget-wrap a:focus{
+    text-decoration: none; outline: none;
+}
+
+/*BANER-FORM-HOME
+------------------------------------------------------------------------------------------------------*/
+.baner-form-wrap{
+    width: 100%; overflow: hidden; margin-top: 5px;
+}
+.baner-home{
+    width: 73%; float: left; background: #f9db6a;
+}
+.form-home{
+    width:27%; float: left; background: #f59e00;
+}
+.inner-baner{
+    width:25%; float: left;
+}
+.inner-baner img{
+    max-width: 100%;
+}
+.block-text{
+    overflow: hidden;
+}
+.block-text.block-t{
+    background: #f59e00;
+}
+.block-t p{
+    padding: 30px 0 0 20px; font-size: 30px; color: #5a1b00; margin: 0;
+}
+.block-pr p{
+    font-size: 25px; color: #5a1b00; margin: 0; padding: 20px 20px 0 0; text-align: right;
+}
+.block-text.block-f{
+    background: #8d340e;
+}
+.block-f p{
+    color:#fff; padding: 30px 0 0 20px;
+}
+.block-z p{
+    color:#fff; padding: 30px 20px 0 0px; color: #5a1b00; text-align: right;
+}
 
 /* MEDIA
 ------------------------------------------------------------------------------------------------------*/
