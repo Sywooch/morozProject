@@ -176,9 +176,182 @@ $this->title = 'Магазин';
     </div>
 
     <div class="forum-tabs">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+            <li class="active"><div class="bglefttab"></div><a href="#home" >ХИТЫ ПРОДАЖ-45 наименований</a><div class="bgrigthtab"></div></li>
+            <li><div class="bglefttab"></div><a href="#profile" >АКЦИИ И РАСПРОДАЖИ - скидки до 50%</a><div class="bgrigthtab"></div></li>
+        </ul>
 
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="home">
+                <div class="wrap-slider-home">
+                    <div class="slider4">
+                        <div class="slide">
+                            <div class="item-slider-home">
+                                <a href="#"><h1>Плита потолочная</h1></a>
+                                <a href="#"><img src="image/p1.jpg"></a>
+                                <p class="name-pr">Armstrong Bajkal Board</p>
+                                <p class="price">2500<span class="glyphicon glyphicon-ruble"></span></p>
+                                <p class="status">на складе</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="item-slider-home">
+                                <a href="#"><h1>Дверь межкомнатная</h1></a>
+                                <a href="#"><img src="image/p2.jpg"></a>
+                                <p class="name-pr">Armstrong Bajkal Board</p>
+                                <p class="price">2500<span class="glyphicon glyphicon-ruble"></span></p>
+                                <p class="status">на складе</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="item-slider-home">
+                                <a href="#"><h1>Ламинат</h1></a>
+                                <a href="#"><img src="image/p3.jpg"></a>
+                                <p class="name-pr">Armstrong Bajkal Board</p>
+                                <p class="price">2500<span class="glyphicon glyphicon-ruble"></span></p>
+                                <p class="status">на складе</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="item-slider-home">
+                                <a href="#"><h1>Керамогранит</h1></a>
+                                <a href="#"><img src="image/p4.jpg"></a>
+                                <p class="name-pr" data-toggle="tooltip" data-placement="top" title="Armstrong Bajkal Board Armstrong Bajkal Board Armstrong Bajkal BoardArmstrong Bajkal Board">Armstrong Bajkal Board Armstrong Bajkal Board Armstrong Bajkal BoardArmstrong Bajkal Board</p>
+                                <p class="price">2500<span class="glyphicon glyphicon-ruble"></span></p>
+                                <p class="status">на складе</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="item-slider-home">
+                                <a href="#"><h1>Мозайка</h1></a>
+                                <a href="#"><img src="image/p5.jpg"></a>
+                                <p class="name-pr">Armstrong Bajkal Board</p>
+                                <p class="price">2500<span class="glyphicon glyphicon-ruble"></span></p>
+                                <p class="status">на складе</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="profile">
+                <div class="wrap-slider-home">
+                    <div class="slider5">
+                        <div class="slide">
+                            <div class="item-slider-home">
+                                <a href="#"><h1>Плита потолочная</h1></a>
+                                <a href="#"><img src="image/p1.jpg"></a>
+                                <p class="name-pr">Armstrong Bajkal Board1</p>
+                                <p class="price">2500<span class="glyphicon glyphicon-ruble"></span></p>
+                                <p class="status">на складе</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="item-slider-home">
+                                <a href="#"><h1>Дверь межкомнатная</h1></a>
+                                <a href="#"><img src="image/p2.jpg"></a>
+                                <p class="name-pr">Armstrong Bajkal Board1</p>
+                                <p class="price">2500<span class="glyphicon glyphicon-ruble"></span></p>
+                                <p class="status">на складе</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="item-slider-home">
+                                <a href="#"><h1>Ламинат</h1></a>
+                                <a href="#"><img src="image/p3.jpg"></a>
+                                <p class="name-pr">Armstrong Bajkal Board1</p>
+                                <p class="price">2500<span class="glyphicon glyphicon-ruble"></span></p>
+                                <p class="status">на складе</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="item-slider-home">
+                                <a href="#"><h1>Керамогранит</h1></a>
+                                <a href="#"><img src="image/p4.jpg"></a>
+                                <p class="name-pr" data-toggle="tooltip" data-placement="top" title="Armstrong Bajkal Board Armstrong Bajkal Board Armstrong Bajkal BoardArmstrong Bajkal Board">Armstrong Bajkal Board Armstrong Bajkal Board Armstrong Bajkal BoardArmstrong Bajkal Board</p>
+                                <p class="price">2500<span class="glyphicon glyphicon-ruble"></span></p>
+                                <p class="status">на складе</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="item-slider-home">
+                                <a href="#"><h1>Мозайка</h1></a>
+                                <a href="#"><img src="image/p5.jpg"></a>
+                                <p class="name-pr">Armstrong Bajkal Board1</p>
+                                <p class="price">2500<span class="glyphicon glyphicon-ruble"></span></p>
+                                <p class="status">на складе</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
+    <div class="header-catalog-block">
+        <div class="inner-block">
+            <div class="inner-inner-block"><h1 style="color:#8d340e;">О КОМПАНИИ "ФОРУМ-НОВОСИБИРСК"</h1><p>10 лет успеха на рынке товаров для ремонта</p></div>
+        </div>
+    </div>
+    <div class="banner-news">
+        <div class="banner-home">
+            <div class="wrap-img-banner"><img src="/image/banner.jpg" alt=""/><p>Компания «Форум-Новосибирск» занимается поставками товаров для ремонта с 2005 года. Вот уже более 5-и лет, как мы пополнили наш ассортимент напольными покрытиями — ламинатом, пробкой, паркетной доской, линолеумом.</p></div>
+        </div>
+        <div class="news-home">
+            <div class="news-block">
+                <h1>Новости компании</h1>
+                <div class="slider-news">
+                    <div class="slide">
+                        <div class="inner-news-block">
+                            <a href="#" class="news-name">СМЕНА КОЛЛЕКЦИИ</a>
+                            <p>Мы сменяем коллекцию и предлагаем приобрести Ламинт Kronotex 32 класса по оптовым ценам</p>
+                            <a href="#" class="view-news">подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="inner-news-block">
+                            <a href="#" class="news-name">СМЕНА КОЛЛЕКЦИИ</a>
+                            <p>Мы сменяем коллекцию и предлагаем приобрести Ламинт Kronotex 32 класса по оптовым ценам</p>
+                            <a href="#" class="view-news">подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="inner-news-block">
+                            <a href="#" class="news-name">СМЕНА КОЛЛЕКЦИИ</a>
+                            <p>Мы сменяем коллекцию и предлагаем приобрести Ламинт Kronotex 32 класса по оптовым ценам</p>
+                            <a href="#" class="view-news">подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-block">
+                <h1 class="news-pages">А знаете ли Вы?</h1>
+                <div class="slider-news">
+                    <div class="slide">
+                        <div class="inner-news-block">
+                            <a href="#" class="news-name">ОКОННАЯ ЗАМАЗКА</a>
+                            <p>Для размягчения затвердевшей оконной замазки ее смазывают сметанообразной пастой из мыла и оставляют для размягчения на 2-3 часа </p>
+                            <a href="#" class="view-news">подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="inner-news-block">
+                            <a href="#" class="news-name">ОКОННАЯ ЗАМАЗКА</a>
+                            <p>Для размягчения затвердевшей оконной замазки ее смазывают сметанообразной пастой из мыла и оставляют для размягчения на 2-3 часа </p>
+                            <a href="#" class="view-news">подробнее</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="inner-news-block">
+                            <a href="#" class="news-name">ОКОННАЯ ЗАМАЗКА</a>
+                            <p>Для размягчения затвердевшей оконной замазки ее смазывают сметанообразной пастой из мыла и оставляют для размягчения на 2-3 часа</p>
+                            <a href="#" class="view-news">подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <? $this->registerJs("
@@ -192,6 +365,47 @@ $this->title = 'Магазин';
             $(\".block-text\").height(HI);
             $(\".form-home\").height(HI*2);
         });
+
+        var sl1 = $('.slider4').bxSlider({
+            slideWidth: 213,
+            minSlides: 5,
+            maxSlides: 5,
+            moveSlides: 1,
+            slideMargin: 10,
+        });
+        var sl2 = $('.slider5').bxSlider({
+            slideWidth: 213,
+            minSlides: 5,
+            maxSlides: 5,
+            moveSlides: 1,
+            slideMargin: 10,
+        });
+
+        $('a[href=\"#home\"]').click(function () {
+            $(this).tab('show');
+            sl1.destroySlider();
+            sl1.reloadSlider();
+            return false;
+        });
+        $('a[href=\"#profile\"]').click(function () {
+            $(this).tab('show');
+            sl2.destroySlider();
+            sl2.reloadSlider();
+            return false;
+        });
+
+        $('.name-pr').tooltip();
+
+        $('.slider-news').bxSlider({
+            slideWidth: 230,
+            minSlides: 1,
+            maxSlides: 1,
+            moveSlides: 1,
+            controls: false,
+
+        });
+
+
 
     });
 

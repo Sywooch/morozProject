@@ -18,9 +18,11 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
+        'libs/bxslider/jquery.bxslider.css',
         'css/site.css',
     ];
     public $js = [
+        'libs/bxslider/jquery.bxslider.min.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
