@@ -4,8 +4,8 @@ namespace app\components;
 use app\modules\pages\models\Tree;
 
 class MenuHelper{
-    public static function getMenu($public = true){
-        $parent = 0;
+    public static function getMenu($public = true,$parent = 0){
+
         $res = Tree::find()->orderBy('sort')->asArray()->all();
         $arr = array();
         foreach($res as $ar){

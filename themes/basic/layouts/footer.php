@@ -1,7 +1,7 @@
 <div class="footer">
     <div class="first-wrap-footer">
         <div class="footer-logo">
-            <a href="/"><img src="image/logo-footer.jpg" alt=""/></a>
+            <a href="/"><img src="/image/logo-footer.jpg" alt=""/></a>
         </div>
         <div class="footer-menu">
             <div class="block-item-menu">
@@ -51,7 +51,7 @@
             <p class="copy-footer">Copyrigt © 2005-<?=date("y");?> ООО «Форум-Новосибирск»</p>
         </div>
         <div class="two-inner-block">
-            <p class="oplata-footer">Принимаем к оплате: <img src="image/opl.jpg" alt=""/></p>
+            <p class="oplata-footer">Принимаем к оплате: <img src="/image/opl.jpg" alt=""/></p>
         </div>
         <div class="two-inner-block">
             <p class="design-footer">Дизайн и разработка сайта — <a href="http://xn----7sbb0bioqq.xn--p1ai/" target="_blank">Арт-Лайн.Рф</a></p>

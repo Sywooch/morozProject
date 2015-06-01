@@ -74,7 +74,7 @@ body {
 .forum-menu-catalog{
     width:30%; height: 50px; float: left; background: #8d340e url('/image/mc.jpg');
     background-repeat: no-repeat; background-position: right; padding: 0 20px 0 30px;
-    overflow: hidden;
+    position:relative;
 }
 .forum-menu-pages{
     width:45%; height: 50px; float: left; background: #f59e00 url('/image/mc2.jpg');
@@ -417,7 +417,7 @@ body {
     clear: both; margin: 15px 0; list-style: none;
 }
 .plus{
-    display: inline-block; width:11px; height:13px; background: url("/image/plus.jpg");
+    display: inline-block; width:11px; height:13px; background: url("/image/plus.png");
     cursor:pointer; margin-right: 5px;
 }
 .links-cat li a{
@@ -646,6 +646,55 @@ body {
     color: #1985ae; text-decoration: underline;
 }
 
+/*CATALOG MENU
+------------------------------------------------------------------------------------------------------*/
+.categories-catalog-first{
+    width:300px; background: #fff;  position: absolute; border: 1px solid #c6c6c6;
+    top:50px; left: 0; z-index:1000; display: none;
+}
+.ul-cat-links{
+    padding: 0; margin: 0;
+}
+.ul-cat-links > li{
+    list-style:none; padding: 10px 0px; border-top: 1px solid #c6c6c6; background: #fff;
+}
+.ul-cat-links > li:first-child{
+    border: none;
+}
+.ul-cat-links > li >a{
+    color: #1985ae; text-transform: uppercase; display: inline-block; position: relative;
+    padding-right: 20px; width: 100%; padding-left: 5px;
+}
+.ul-cat-links > li >a > span.strelka{
+    display: block; position: absolute; top:0; right: 3px;
+}
+.ul-cat-links li:hover{
+    background: #f2f2f2;
+}
+.ul-cat-links li:hover > div.child-category{
+    display: block; background: #f2f2f2;
+}
+
+.child-category{
+    width:750px; position: absolute; top:-1px; left:298px; display: none; background: #fff;
+    padding: 5px; border: 1px solid #c6c6c6; border-left: none; max-height: 500px; overflow-y: auto;
+}
+.item-ch-links{
+    width: 50%; float: left;
+}
+.item-ch-links h3{
+    font-size: 20px; padding-left: 20px;
+}
+.item-ch-links h3 a{
+    color: #8d340e;
+}
+.item-ch-links ul{
+    padding: 10px; margin: 0;
+}
+.item-ch-links ul li{
+    list-style: none;
+}
+
 /* MEDIA
 ------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width:1170px){
@@ -656,6 +705,9 @@ body {
 @media only screen and (max-width:1075px){
     .ramka{
         margin: 10px auto;
+    }
+    .child-category{
+        width:700px;
     }
 }
 @media only screen and (max-width:1024px){
@@ -676,6 +728,9 @@ body {
     }
     .company-name-footer {
         padding: 28px 0 10px 0; height: 57px;
+    }
+    .child-category{
+        width:690px;
     }
 }
 
