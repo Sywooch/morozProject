@@ -92,14 +92,14 @@ class CategoryController extends BaseAdminController
         $oldparent = $model->parent;
 
         if ($model->load(Yii::$app->request->post())) {
-            $Ccat = NewsCategory::find()->where(['parent'=> $model->id])->all();
+            //$Ccat = NewsCategory::find()->where(['parent'=> $model->id])->all();
             //Если есть дети
-            if($Ccat){
+            /*if($Ccat){
                 foreach($Ccat as $c){
                     $c->parent=$oldparent;
                     $c->save();
                 }
-            }
+            }*/
             $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {

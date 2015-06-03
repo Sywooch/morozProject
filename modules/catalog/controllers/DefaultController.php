@@ -51,7 +51,7 @@ class DefaultController extends Controller{
             $sql = "SELECT COUNT(*) FROM goods WHERE cat_id IN ($childs)";
             $count = $db->createCommand("SELECT COUNT(*) FROM goods WHERE cat_id IN ($childs)" )->queryScalar();
 
-            $pagination = new Pagination(['totalCount' => $count, 'pageSize'=>16,'forcePageParam' => false,'pageSizeParam' => false]);
+            $pagination = new Pagination(['totalCount' => $count, 'pageSize'=>20,'forcePageParam' => false,'pageSizeParam' => false]);
             $params = [':offset' => $pagination->offset, ':limit' => $pagination->limit];
             $models = $db->createCommand("SELECT * FROM goods WHERE cat_id IN ($childs) LIMIT :offset,:limit")
                 ->bindValues($params)

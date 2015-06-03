@@ -760,6 +760,248 @@ body {
 .btn-braun:hover{
     background: #a34a27; color: #fff;
 }
+/* FILTRS
+------------------------------------------------------------------------------------------------------*/
+.wrap-filters{
+    border-right: 2px solid #f59e00; border-left: 2px solid #f59e00;  margin: 0 0 0 15px;
+}
+.block-form{
+    padding: 15px 10px 10px 15px; border-bottom: 1px solid #dedede; width: 100%;
+}
+.block-form h3{
+    margin: 0 0 10px 0; font-size: 16px;
+}
+
+/* Ширина слайдера */
+#slider {
+    width: 100%; margin:10px 0;
+}
+/* Контейнер слайдера */
+.ui-slider {
+    position: relative;
+}
+/* Ползунок */
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 11px;   /* Задаем нужную ширину */
+    height: 14px;  /* и высоту */
+    background: url('/image/slider.png') no-repeat; /* картинка изображающая ползунок. Или можно залить цветом, задать бордюр и скругления */
+    cursor: pointer;
+    outline: none;
+}
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+}
+/* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+.ui-slider-horizontal {
+    height: 3px; /* задаем высоту согласно дизайна */
+}
+/* позиционируем ползунки */
+.ui-slider-horizontal .ui-slider-handle {
+    top: -5px;
+    margin-left: -6px;
+}
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+}
+/* оформление полосы по которой ходит ползунок */
+.ui-widget-content {
+    border: 1px solid #f59e00;
+    background: #fff;
+}
+/* оформление активного участка (между двумя ползунками) */
+.ui-widget-header {
+    border: 1px solid #f59e00;
+    background: #f59e00;
+}
+#minCost, #maxCost{
+    width:37%; border:1px solid #f59e00; padding: 3px 5px;
+}
+
+.block-form input[type="checkbox"]{
+    border:1px solid #f59e00;
+}
+
+
+.checkbox-modern2{
+    display: block;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0;
+    width: 100%;
+}
+.checkbox-modern2 input[type=checkbox] {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    z-index: 2;
+}
+.checkbox-modern2 input[type="checkbox"] + label {
+    padding-left: 24px; color:#3a3939; font-weight: normal; padding-top:5px; font-size: 14px;
+}
+.checkbox-modern2 input[type="checkbox"] + label::before,
+.checkbox-modern2 input[type="checkbox"] + label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+}
+.checkbox-modern2 input[type="checkbox"] + label::before {
+    background: #ffffff; border:1px solid #f59e00;
+}
+.checkbox-modern2 input[type="checkbox"] + label::after {
+    background: url("/image/ch.png");
+    border:1px solid #f59e00;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.checkbox-modern2 input[type="checkbox"]:checked + label::after {
+    display: block;
+}
+.checkbox-modern2 input[type="checkbox"]:checked + label::before,
+.checkbox-modern2 input[type="checkbox"]:checked + label::after {
+    -webkit-animation: cd-bounce 0.3s;
+    -moz-animation: cd-bounce 0.3s;
+    animation: cd-bounce 0.3s;
+}
+
+.btn-wrap{
+    margin: 15px 0 0 0; text-align: center; padding-bottom: 15px;
+}
+.btn-out{
+    border: none; background: #b2b2b2; color:#fff; padding: 10px 20px;
+}
+.btn-search{
+    border: none; background: #f59e00; color:#8d340e; padding: 10px 20px;
+}
+.bottom-form{
+    width:100%; height: 26px; overflow: hidden;
+}
+.bot-left{
+    width:50%; float: left; background: url("/image/formleftbot.jpg");
+    background-repeat: no-repeat; height: 26px;
+}
+.bot-right{
+    width:50%; float: left; background: url("/image/formbotright.jpg");
+    background-repeat: no-repeat; height: 26px; background-position: top right;
+}
+
+.wrap-leftpages-block{
+    width:100%; margin-top:10px;
+}
+.middle-header-left-block{
+    width:100%; height: 55px; background: url("/image/shapka2.jpg");
+    padding: 10px 0 0 100px; font-size: 20px; color:#8d340e; line-height: 17px; margin-top: -1px;
+}
+.header-left-pages{
+    width:100%; height: 55px; background: url("/image/shapka.jpg");
+    padding: 12px 0 0 87px; font-size: 20px; color:#8d340e; line-height: 17px;
+}
+/* Cначала обозначаем стили для IE8 и более старых версий
+т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+/*.checkbox {
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 17px;
+    height: 17px;
+}*/
+/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
+селекторы с плюсом. Показываем, что label кликабелен. */
+/*.checkbox + label {
+    cursor: pointer;
+}*/
+
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше.
+Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked,
+в них все нижеследующие стили не сработают. */
+
+/* Прячем оригинальный чекбокс. */
+/*.checkbox:not(checked) {
+    position: absolute;
+    opacity: 0;
+}*/
+/* будем позиционировать псевдочекбокс относительно label */
+/* оставляем слева от label место под псевдочекбокс */
+/*.checkbox:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 60px;
+}*/
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+/*.checkbox:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 50px;
+    height: 26px;
+    border-radius: 13px;
+    background: #CDD1DA;
+    box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+}*/
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */
+/* анимация, чтобы чекбокс переключался плавно */
+/*.checkbox:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    width: 22px;
+    height: 22px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    transition: all .2s;
+}*/
+/* Меняем фон чекбокса, когда он включен. */
+/*.checkbox:checked + label:before {
+    background: #9FD468;
+}*/
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+/*.checkbox:checked + label:after {
+    left: 26px;
+}*/
+/* Показываем получение фокуса. */
+/*.checkbox:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(255,255,0,.5);
+}*/
+
+/* PAGES
+-------------------------------------------------------------------------------------------------------*/
+.page-wrap{
+    padding: 10px 30px;
+}
+
+
 
 /* MEDIA
 ------------------------------------------------------------------------------------------------------*/

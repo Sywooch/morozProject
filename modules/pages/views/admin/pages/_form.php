@@ -12,7 +12,12 @@ use kartik\select2\Select2;
 /* @var $form yii\widgets\ActiveForm */
 
 $items_first = array("0"=>"Корневая");
-$items_db = ArrayHelper::map(Tree::find()->where(['!=', 'id', $model->id])->all(),'id','name');
+if(isset($model->id)){
+    $items_db = ArrayHelper::map(Tree::find()->where(['!=', 'id', $model->id])->all(),'id','name');
+}else{
+    $items_db = ArrayHelper::map(Tree::find()->all(),'id','name');
+}
+
 $items = $items_first+$items_db;
 ?>
 

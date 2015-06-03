@@ -23,6 +23,7 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         'libs/bxslider/jquery.bxslider.min.js',
+        'libs/jQueryUI/jquery-ui.min.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

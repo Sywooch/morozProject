@@ -1,29 +1,23 @@
+<?php if(count($rootPages)>0):?>
 <ul class="pages-menu">
-    <li>
-        <img src="/image/st2.jpg" alt="" class="actmenu"/> <a href="#"> О КОМПАНИИ</a>
-        <ul class="child">
-            <li><span class="glyphicon glyphicon-triangle-right"></span> <a href="#">One</a></li>
-            <li><span class="glyphicon glyphicon-triangle-right"></span> <a href="#">Two</a></li>
-            <li><span class="glyphicon glyphicon-triangle-right"></span> <a href="#">Three</a></li>
-        </ul>
-    </li>
-    <li>
-        <img src="/image/st2.jpg" alt="" class="actmenu"/> <a href="#"> ДЛЯ ПОКУПАТЕЛЕЙ</a>
-        <ul class="child">
-            <li><span class="glyphicon glyphicon-triangle-right"></span> <a href="#">One</a></li>
-            <li><span class="glyphicon glyphicon-triangle-right"></span> <a href="#">Two</a></li>
-            <li><span class="glyphicon glyphicon-triangle-right"></span> <a href="#">Three</a></li>
-        </ul>
-    </li>
-    <li>
-        <img src="/image/st2.jpg" alt="" class="actmenu"/> <a href="#"> УСЛУГИ</a>
-        <ul class="child">
-            <li><span class="glyphicon glyphicon-triangle-right"></span> <a href="#">One</a></li>
-            <li><span class="glyphicon glyphicon-triangle-right"></span> <a href="#">Two</a></li>
-            <li><span class="glyphicon glyphicon-triangle-right"></span> <a href="#">Three</a></li>
-        </ul>
-    </li>
+    <?php foreach($rootPages as $r):?>
+        <li>
+            <img src="/image/st2.jpg" alt="" class="actmenu"/> <a href="/pages/<?=$r['link']?>"> <?=$r['name']?></a>
+            <?php if(count($pages)>0):?>
+                <ul class="child">
+                    <?php foreach($pages as $p):?>
+                        <?php if($r['id']==$p['parent']):?>
+                            <li><span class="glyphicon glyphicon-triangle-right"></span> <a href="/pages/<?=$p['link']?>"><?=$p['name']?></a></li>
+                        <?php endif; ?>
+                    <?php endforeach;?>
+                </ul>
+            <?php endif; ?>
+        </li>
+    <?php endforeach;?>
 </ul>
+<?php endif; ?>
+
+
 <? $this->registerJs("
 
     $(function(){

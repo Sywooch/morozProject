@@ -1,5 +1,6 @@
 <?php
 $this->title = 'Магазин';
+use app\components\widgets\MenuHomeCatWidget;
 ?>
 <div class="forum-home">
 
@@ -57,90 +58,7 @@ $this->title = 'Магазин';
     </div>
     <div class="catalog-block">
         <div class="left-block">
-        <table class="catalog-links-home">
-            <tr>
-                <td>
-                    <div class="header-links">
-                        <img src="image/cat1.jpg" alt=""/> <span>Напольные<br> покрытия</span>
-                    </div>
-                    <ul class="links-cat">
-                        <li><span class="plus"></span><a href="#">Ламинат</a></li>
-                        <li><span class="plus"></span><a href="#">Паркет</a></li>
-                        <li><span class="plus"></span><a href="#">Линолиум</a></li>
-                        <li><span class="plus"></span><a href="#">Теплый пол</a></li>
-                        <li><span class="plus"></span><a href="#">Керамогранит</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <div class="header-links">
-                        <img src="image/cat2.jpg" alt=""/> <span>Подвесные<br> потолки</span>
-                    </div>
-                    <ul class="links-cat">
-                        <li><span class="plus"></span><a href="#">Ламинат</a></li>
-                        <li><span class="plus"></span><a href="#">Паркет</a></li>
-                        <li><span class="plus"></span><a href="#">Линолиум</a></li>
-                        <li><span class="plus"></span><a href="#">Теплый пол</a></li>
-                        <li><span class="plus"></span><a href="#">Керамогранит</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <div class="header-links">
-                        <img src="image/cat3.jpg" alt=""/> <span>Настенные<br> покрытия</span>
-                    </div>
-                    <ul class="links-cat">
-                        <li><span class="plus"></span><a href="#">Ламинат</a></li>
-                        <li><span class="plus"></span><a href="#">Паркет</a></li>
-                        <li><span class="plus"></span><a href="#">Линолиум</a></li>
-                        <li><span class="plus"></span><a href="#">Теплый пол</a></li>
-                        <li><span class="plus"></span><a href="#">Керамогранит</a></li>
-                        <li><span class="plus"></span><a href="#">Линолиум</a></li>
-                        <li><span class="plus"></span><a href="#">Теплый пол</a></li>
-                        <li><span class="plus"></span><a href="#">Керамогранит</a></li>
-                    </ul>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="header-links">
-                        <img src="image/cat4.jpg" alt=""/> <span>Мозайка</span>
-                    </div>
-                    <ul class="links-cat">
-                        <li><span class="plus"></span><a href="#">Ламинат</a></li>
-                        <li><span class="plus"></span><a href="#">Паркет</a></li>
-                        <li><span class="plus"></span><a href="#">Линолиум</a></li>
-                        <li><span class="plus"></span><a href="#">Теплый пол</a></li>
-                        <li><span class="plus"></span><a href="#">Керамогранит</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <div class="header-links">
-                        <img src="image/cat5.jpg" alt=""/> <span>Двери</span>
-                    </div>
-                    <ul class="links-cat">
-                        <li><span class="plus"></span><a href="#">Ламинат</a></li>
-                        <li><span class="plus"></span><a href="#">Паркет</a></li>
-                        <li><span class="plus"></span><a href="#">Линолиум</a></li>
-                        <li><span class="plus"></span><a href="#">Теплый пол</a></li>
-                        <li><span class="plus"></span><a href="#">Керамогранит</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <div class="header-links">
-                        <img src="image/cat6.jpg" alt=""/> <span>Сопутсвующие<br> товары</span>
-                    </div>
-                    <ul class="links-cat">
-                        <li><span class="plus"></span><a href="#">Ламинат</a></li>
-                        <li><span class="plus"></span><a href="#">Паркет</a></li>
-                        <li><span class="plus"></span><a href="#">Линолиум</a></li>
-                        <li><span class="plus"></span><a href="#">Теплый пол</a></li>
-                        <li><span class="plus"></span><a href="#">Керамогранит</a></li>
-                        <li><span class="plus"></span><a href="#">Линолиум</a></li>
-                        <li><span class="plus"></span><a href="#">Теплый пол</a></li>
-                        <li><span class="plus"></span><a href="#">Керамогранит</a></li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
+            <?= MenuHomeCatWidget::widget(); ?>
         </div>
         <div class="right-block-pages">
             <div class="wrap-right-block">
