@@ -498,17 +498,26 @@ body {
     box-shadow: none; -webkit-box-shadow: none;
 }
 .item-slider-home{
-    border: 1px solid #c6c6c6; margin-bottom: 10px; overflow: hidden; position: relative;
+    border: 1px solid #c6c6c6; margin-bottom: 10px; position: relative;
 }
 .item-slider-home a:hover{
     text-decoration: none;
 }
 .item-slider-home h1{
-    font-size: 21px; color:#5a1b00; margin: 0; text-align: center; padding: 20px 5px;
+    font-size: 21px;  margin: 0; text-align: center;  height: 40px; overflow: hidden; padding: 10px 5px;
+}
+.item-slider-home h1 a{
+    color:#5a1b00;
+}
+.item-slider-home a.linkimg{
+    text-align: center; display: block;
 }
 .name-pr{
     font-size: 16px; color:#3a3939; padding: 10px 15px; margin: 0;
     height: 31px; overflow: hidden;
+}
+.name-pr a{
+    color:#3a3939;
 }
 .price{
     font-size: 28px; width: 60%; margin: 0; padding: 0 0 10px 15px; color: #ea8604; float: left;
@@ -1001,7 +1010,123 @@ body {
     padding: 10px 30px;
 }
 
+/* NEWS
+------------------------------------------------------------------------------------------------------*/
+.wrap-figura-block{
+    height: 55px; overflow: hidden; padding-left: 30px;
+}
+.left-figura{
+    height: 55px;
+    width: 27px;
+    float: left;
+    background: url("/image/lefttab.jpg");
+}
+.center-figura{
+    min-width: 200px; height: 55px; float: left; border-top: 1px solid #f59e00; background: #fff;
+}
+.center-figura h1{
+    margin: 0; color:#464646; font-size: 27px; text-align: center; padding-top: 15px;
+}
+.right-figura{
+    height: 55px;
+    width: 27px;
+    float: left;
+    background: url("/image/righttab.jpg");
+}
+.line-figura{
+    border-bottom: 1px solid #f59e00; margin-top: -1px;
+}
+.news-wrap-list{
+    padding: 20px 30px; width: 100%; overflow: hidden; margin-bottom: 20px;
+}
+.wrap-items-news{
+    width:50%; float: left;
+}
+.item-news{
+    border:1px solid #dcdcdc; margin-bottom: 6px; height: 170px; padding: 17px;
+}
+.wrap-items-news:nth-child(even) .item-news{
+    margin-left: 3px;
+ }
+.wrap-items-news:nth-child(odd) .item-news{
+    margin-right: 3px;
+}
+.item-news img{
+    max-width: 100%; border: 1px solid #dcdcdc; float: left; margin-right: 10px;
+}
+.date-news{
+    font-size: 15px; color:#e39200; margin: 0;
+}
+.item-news h2{
+    margin: 5px 0 10px 0; font-size: 21px;
+}
+.item-news h2 a{
+    color:#0263a7; text-decoration: underline;
+}
+.desc-news{
+    font-size: 15px; color:#3a3939;
+}
 
+.wrap-page-news{
+    width:100%; overflow: hidden; padding: 0 30px;
+}
+.left-block-page-news{
+    width:30%; float: left; padding: 30px 0 0 0;
+}
+.right-block-page-news{
+    width:70%; float: left;
+}
+.item-news-page-news{
+    padding: 0 15px; margin-bottom: 20px;
+}
+.item-news-page-news h1{
+    font-size: 27px; color: #464646;
+}
+.news-text{
+    padding: 20px 0;
+}
+
+.wrap-figura-block-full{
+    height: 55px; overflow: hidden; width: 100%; position: relative;
+}
+.left-figura-full{
+    height: 55px;
+    width: 27px;
+    left:0;
+    position: absolute;
+    background: url("/image/figleftfull.png");
+}
+.center-figura-full{
+    height: 55px; position: absolute; left:27px; right:27px;background: url("/image/figcenterfull.png");
+}
+.center-figura-full h1{
+    margin: 0; color:#5a1b00; font-size: 27px; text-align: center; padding-top: 15px;
+}
+.right-figura-full{
+    height: 55px;
+    width: 27px;
+    position: absolute;
+    right: 0;
+    background: url("/image/figrightfull.png");
+}
+.list-news-page-news{
+    border-left: 1px solid #f59e00; border-right: 1px solid #f59e00; margin-bottom: 20px;
+}
+.list-news-item{
+    padding: 20px; border-bottom: 1px solid #f59e00;
+}
+.link-list-name{
+    font-size: 16px; text-decoration: underline; color:#097ca8; text-transform: uppercase;
+}
+.img-list-block{
+    text-align: center; height: 70px; overflow: hidden; margin: 15px 0;
+}
+.img-list-block img{
+    max-width: 100%;
+}
+.yello-block{
+    background: #fef2c3;
+}
 
 /* MEDIA
 ------------------------------------------------------------------------------------------------------*/

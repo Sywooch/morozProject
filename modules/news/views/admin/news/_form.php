@@ -16,7 +16,7 @@ use mihaildev\ckeditor\CKEditor;
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => 50]) ?>
 
-    <?= $form->field($model, 'description')->textInput(['maxlength' => 150]) ?>
+    <?= $form->field($model, 'description')->textInput(['maxlength' => 255]) ?>
 
     <?//= $form->field($model, 'text')->textarea(['rows' => 6]) ?>
     <?/*= $form->field($model, 'text')->widget(CKEditor::className(),[

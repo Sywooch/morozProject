@@ -42,14 +42,14 @@ class DefaultController extends Controller
 
         //решение с кешированием
         //$pagination = new Pagination(['totalCount' => $count, 'pageSize'=>2,'forcePageParam' => false,'pageSizeParam' => false]);
-        $duration = 100;     // кэширование результата на 100 секунд
+        $duration = 3600;     // кэширование результата на 100 секунд
         $db = Yii::$app->db;
 
         $models = $db->cache(function ($db) {
             $count = $db->createCommand('SELECT COUNT(*) FROM news LEFT JOIN news_category ON news.news_category_id = news_category.id WHERE news.visible="Y"')->queryScalar();
-            $pagination = new Pagination(['totalCount' => $count, 'pageSize'=>2,'forcePageParam' => false,'pageSizeParam' => false]);
+            $pagination = new Pagination(['totalCount' => $count, 'pageSize'=>10,'forcePageParam' => false,'pageSizeParam' => false]);
             $params = [':offset' => $pagination->offset, ':limit' => $pagination->limit];
-            $models = $db->createCommand('SELECT news.* FROM news LEFT JOIN news_category ON news.news_category_id = news_category.id WHERE news.visible="Y" LIMIT :offset,:limit')
+            $models = $db->createCommand('SELECT news.* FROM news LEFT JOIN news_category ON news.news_category_id = news_category.id WHERE news.visible="Y" ORDER BY news.date_create LIMIT :offset,:limit')
                 ->bindValues($params)
                 ->queryAll();
             return array($models,$pagination);
@@ -64,8 +64,22 @@ class DefaultController extends Controller
     }
 
 
-    public function actionView()
-    {
-        return $this->render('view');
+    public function actionView(){
+        $id = (int)Yii::$app->request->get('url');
+        $db = Yii::$app->db;
+        $params = [':limit' => 4];
+        $models = $db->createCommand('SELECT * FROM news  WHERE news.visible="Y" ORDER BY news.date_create DESC LIMIT :limit')
+            ->bindValues($params)
+            ->queryAll();
+        if($id){
+            $params2 = [':id' => $id];
+            $news = $db->createCommand('SELECT * FROM news  WHERE news.id =:id AND news.visible="Y" ')
+                ->bindValues($params2)
+                ->queryOne();
+        }
+        return $this->render('view',[
+            "listnews"=>$models,
+            "news"=>$news,
+        ]);
     }
 }

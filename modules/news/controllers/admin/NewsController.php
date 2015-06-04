@@ -74,9 +74,13 @@ class NewsController extends BaseAdminController
                 // resize to width 200px
                 $img = Image::getImagine()->open(Yii::getAlias(Yii::$app->params['uploadPathNews'] . $nameFile . '.' . $model->file->extension));
                 $size = $img->getSize();
-                $ratio = $size->getWidth()/$size->getHeight();
-                $width = 200;
-                $height = round($width/$ratio);
+                //$ratio = $size->getWidth()/$size->getHeight();
+                //$width = 200;
+                //$height = round($width/$ratio);
+                $ratio = $size->getHeight() / $size->getWidth();
+                $height = 132;
+                $width = round($height/$ratio);
+
                 Image::thumbnail(Yii::$app->params['uploadPathNews']. $nameFile . '.' . $model->file->extension,$width,$height)->save(Yii::$app->params['uploadPathNews'] .'trumbs/' ."trumb_". $nameFile . '.' . $model->file->extension);
                 $model->img = $nameFile . '.' . $model->file->extension;
             }
@@ -116,9 +120,14 @@ class NewsController extends BaseAdminController
                 // resize to width 200px
                 $img = Image::getImagine()->open(Yii::getAlias(Yii::$app->params['uploadPathNews'] . $nameFile . '.' . $model->file->extension));
                 $size = $img->getSize();
-                $ratio = $size->getWidth()/$size->getHeight();
-                $width = 200;
-                $height = round($width/$ratio);
+                //$ratio = $size->getWidth()/$size->getHeight();
+                //$width = 200;
+                //$height = round($width/$ratio);
+                // resize to height 132px
+                $ratio = $size->getHeight() / $size->getWidth();
+                $height = 132;
+                $width = round($height/$ratio);
+
                 Image::thumbnail(Yii::$app->params['uploadPathNews']. $nameFile . '.' . $model->file->extension,$width,$height)->save(Yii::$app->params['uploadPathNews'] .'trumbs/' ."trumb_". $nameFile . '.' . $model->file->extension);
                 $model->img = $nameFile . '.' . $model->file->extension;
             }else{

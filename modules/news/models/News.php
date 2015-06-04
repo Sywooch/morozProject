@@ -40,7 +40,7 @@ class News extends \yii\db\ActiveRecord
             [['date_create'], 'safe'],
             [['news_category_id'], 'integer'],
             [['title'], 'string', 'max' => 50],
-            [['description'], 'string', 'max' => 150],
+            [['description'], 'string', 'max' => 255],
             [['img'], 'file','extensions'=>'jpg, gif, png,jpeg','maxSize'=>2097152],
         ];
     }
