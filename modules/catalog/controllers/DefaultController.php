@@ -53,9 +53,11 @@ class DefaultController extends Controller{
 
             $pagination = new Pagination(['totalCount' => $count, 'pageSize'=>20,'forcePageParam' => false,'pageSizeParam' => false]);
             $params = [':offset' => $pagination->offset, ':limit' => $pagination->limit];
-            $models = $db->createCommand("SELECT * FROM goods WHERE cat_id IN ($childs) LIMIT :offset,:limit")
-                ->bindValues($params)
-                ->queryAll();
+            $models = $db->createCommand("
+                      SELECT goods.*, goods_images.imgname FROM goods
+                      LEFT JOIN goods_images ON goods_images.goods_id = goods.id AND goods_images.chief = 'Y'
+                      WHERE goods.cat_id IN ($childs) LIMIT :offset,:limit
+                ")->bindValues($params)->queryAll();
 
         }else{
             throw new HttpException(404, 'Нет такой страницы');
@@ -69,7 +71,6 @@ class DefaultController extends Controller{
             'cur_cat'=>$current_cat,
         ]);
     }
-
 
     /**
      * Получение ID  дочерних категорий

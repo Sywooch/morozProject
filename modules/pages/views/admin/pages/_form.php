@@ -40,6 +40,8 @@ $items = $items_first+$items_db;
 
     <?= $form->field($model, 'link')->textInput(['maxlength' => 255]) ?>
 
+    <?= $form->field($model, 'desc')->textInput(['maxlength' => 255]) ?>
+
     <?//= $form->field($model, 'html')->textarea(['rows' => 6]) ?>
     <?=$form->field($model, 'html')->widget(
         'trntv\aceeditor\AceEditor',

@@ -1,6 +1,8 @@
 <?php
 use yii\widgets\Breadcrumbs;
 use yii\widgets\LinkPager;
+use app\components\widgets\HomePageWidget;
+use app\components\widgets\CaruselWidget;
 $this->title = 'Каталог';
 $min = 500; $max = 10000;
 ?>
@@ -111,32 +113,7 @@ $min = 500; $max = 10000;
         </div>
 
         <div class="wrap-leftpages-block">
-            <div class="header-left-pages">Профессиональный<br> монтаж</div>
-            <div class="item-right-pages">
-                <a href="#">УСТАНОВКА ТЕПЛОГО ПОЛА</a>
-                <p>от 5500 руб - 1 от дня</p>
-            </div>
-            <div class="item-right-pages">
-                <a href="#">УКЛАДКА НАПОЛЬНЫХ ПОКРЫТИЙ</a>
-                <p>от 2500 руб - 1 от дня</p>
-            </div>
-            <div class="item-right-pages">
-                <a href="#">УСТАНОВКА ДВЕРИ</a>
-                <p>от 5500 руб - 1 от дня</p>
-            </div>
-            <div class="item-right-pages">
-                <a href="#">УКЛАДКА КЕРАМОГРАНИТА</a>
-                <p>от 2500 руб - 1 от дня</p>
-            </div>
-            <div class="middle-header-left-block">Оперативная <br>доставка</div>
-            <div class="item-right-pages">
-                <a href="#">УСТАНОВКА ДВЕРИ</a>
-                <p>от 5500 руб - 1 от дня</p>
-            </div>
-            <div class="item-right-pages">
-                <a href="#">УКЛАДКА КЕРАМОГРАНИТА</a>
-                <p>от 2500 руб - 1 от дня</p>
-            </div>
+            <?= HomePageWidget::widget(['cat'=>[16,17]]); ?>
         </div>
 
 
@@ -160,7 +137,13 @@ $min = 500; $max = 10000;
                 <?foreach($goods as $g):?>
                     <div class="wrap-item-goods">
                         <div class="item-goods">
-                            <a href="/product/<?=$g['id']?>"><img src="/image/p3.jpg" alt=""/></a>
+                            <?if(!empty($g['imgname'])):?>
+                                <a href="/product/<?=$g['id']?>"><img src="/image/<?=$g['imgname']?>" alt=""/></a>
+                            <?else:?>
+                                <!-- заглушка-->
+                                <a href="/product/<?=$g['id']?>"><img src="/image/p3.jpg" alt=""/></a>
+                            <?endif;?>
+
                             <p id="good-name" class="name-pr" data-toggle="tooltip" data-placement="top" title="<?=$g['name']?>"><a href="/product/<?=$g['id']?>"><?=$g['name']?></a></p>
                             <p class="price" id="price"><?=$g['price']?><span class="glyphicon glyphicon-ruble"></span></p>
                             <p class="status" id="status">на складе</p>
@@ -183,6 +166,7 @@ $min = 500; $max = 10000;
         <?endif;?>
     </div>
 </div>
+<?= CaruselWidget::widget(); ?>
 <? $this->registerJs("
 
     $(function(){

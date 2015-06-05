@@ -3,6 +3,9 @@ $this->title = 'Магазин';
 use app\components\widgets\MenuHomeCatWidget;
 use app\components\widgets\CaruselWidget;
 use app\modules\news\components\widgets\NewsWidget;
+use app\components\widgets\HomePageWidget;
+use yii\helpers\Html;
+use yii\widgets\ActiveForm;
 ?>
 <div class="forum-home">
 
@@ -42,13 +45,11 @@ use app\modules\news\components\widgets\NewsWidget;
                     <h1>ИЩЕТЕ ЛУЧШЕЕ?</h1>
                     <p>Закажите консультацию у нас<br> и мы подберем для Вас лучшие<br> материалы для ремонта!</p>
                 </div>
-                <input type="text" class="home-input" name="name" value="" placeholder="Как Вас зовут?" />
-                <input type="text" class="home-input" name="phone" value="" placeholder="Укажите ваш телефон?" />
-                <div class="checkbox-modern">
-                    <input type="checkbox" id="cd-checkbox-1" checked>
-                    <label for="cd-checkbox-1">Нужна бесплатная консультация</label>
-                </div>
-                <button name="btn-cons" id="btn-cons" type="button">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
+                <?php $form = ActiveForm::begin(); ?>
+                <?= $form->field($model, 'name',['template'=>'{input}'])->textInput(['class'=>'home-input','placeholder'=>'Как Вас зовут?'])->label(""); ?>
+                <?= $form->field($model, 'phone',['template'=>'{input}'])->textInput(['class'=>'home-input','placeholder'=>'Укажите ваш телефон'])->label(""); ?>
+                <button style="margin-top: 3px;" name="btn-cons" id="btn-cons" type="submit">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
+                <?php ActiveForm::end(); ?>
             </div>
         </div>
     </div>
@@ -64,32 +65,7 @@ use app\modules\news\components\widgets\NewsWidget;
         </div>
         <div class="right-block-pages">
             <div class="wrap-right-block">
-                <div class="header-right-pages">Профессиональный<br> монтаж</div>
-                <div class="item-right-pages">
-                    <a href="#">УСТАНОВКА ТЕПЛОГО ПОЛА</a>
-                    <p>от 5500 руб - 1 от дня</p>
-                </div>
-                <div class="item-right-pages">
-                    <a href="#">УКЛАДКА НАПОЛЬНЫХ ПОКРЫТИЙ</a>
-                    <p>от 2500 руб - 1 от дня</p>
-                </div>
-                <div class="item-right-pages">
-                    <a href="#">УСТАНОВКА ДВЕРИ</a>
-                    <p>от 5500 руб - 1 от дня</p>
-                </div>
-                <div class="item-right-pages">
-                    <a href="#">УКЛАДКА КЕРАМОГРАНИТА</a>
-                    <p>от 2500 руб - 1 от дня</p>
-                </div>
-                <div class="middle-header-right-block">Оперативная <br>доставка</div>
-                <div class="item-right-pages">
-                    <a href="#">УСТАНОВКА ДВЕРИ</a>
-                    <p>от 5500 руб - 1 от дня</p>
-                </div>
-                <div class="item-right-pages">
-                    <a href="#">УКЛАДКА КЕРАМОГРАНИТА</a>
-                    <p>от 2500 руб - 1 от дня</p>
-                </div>
+            <?= HomePageWidget::widget(['cat'=>[16,17]]); ?>
             </div>
         </div>
         <div style="clear: both;"></div>
@@ -109,7 +85,7 @@ use app\modules\news\components\widgets\NewsWidget;
         <div class="news-home">
             <?= NewsWidget::widget(['cat'=>1]); ?>
 
-            <div class="news-block">
+            <!--div class="news-block">
                 <h1 class="news-pages">А знаете ли Вы?</h1>
                 <div class="slider-news">
                     <div class="slide">
@@ -134,7 +110,7 @@ use app\modules\news\components\widgets\NewsWidget;
                         </div>
                     </div>
                 </div>
-            </div>
+            </div-->
         </div>
     </div>
 </div>

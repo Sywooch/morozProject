@@ -11,6 +11,7 @@ use app\models\ContactForm;
 use app\models\SignupForm;
 use app\models\PasswordResetRequestForm;
 use app\models\ResetPasswordForm;
+use app\models\Call;
 
 class SiteController extends Controller
 {
@@ -31,8 +32,15 @@ class SiteController extends Controller
 
 
     public function actionIndex(){
-        return $this->render('index');
+        $model = new Call();
+        if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->contact(Yii::$app->params['adminEmail'])) {
+            Yii::$app->session->setFlash('success',"Ваша заявка отправлена");
+            return $this->refresh();
+        }
+        return $this->render('index', ['model' => $model]);
     }
+
+
 
     public function actionLogin()
     {

@@ -386,7 +386,7 @@ body {
     padding: 20px 0 20px 50px; background: url("/image/strelka.jpg"); background-repeat: no-repeat; background-position: 20px center;
 }
 .item-right-pages a{
-    font-size: 16px; color:#097ca8; text-decoration: underline;
+    font-size: 16px; color:#097ca8; text-decoration: underline; text-transform: uppercase;
 }
 .item-right-pages p{
     font-size: 16px; color:#464646; margin: 0;
@@ -710,10 +710,10 @@ body {
     width: 100%;  overflow: hidden;
 }
 .catalog-wrap-filters{
-    width:20%; float: left;
+    width:25%; float: left;
 }
 .catalog-wrap-goods{
-    width:80%; float: left;
+    width:75%; float: left;
 }
 .catalog-child-category{
     padding: 30px 15px; border-bottom: 2px solid #f59e00; background: #fef7de;
@@ -1126,6 +1126,26 @@ body {
 }
 .yello-block{
     background: #fef2c3;
+}
+.center-figura-full h3{
+    margin:0; font-size: 18px; color:#5a1b00; line-height: 19px;
+    background: url("/image/kaska.png"); background-repeat: no-repeat;
+    background-position: left center; padding: 10px 0 0 55px;
+}
+.middle-header-right-block-full{
+    height: 55px; background: url("/image/figcenterfull.png");
+    margin-top: -1px; padding: 0 0 0 27px;
+}
+.middle-header-right-block-full h3{
+    margin:0; font-size: 18px; color:#5a1b00; line-height: 19px;
+    background: url("/image/car.png"); background-repeat: no-repeat;
+    background-position: left 14px;
+    padding: 18px 0 10px 55px;
+}
+.block-form div.help-block {
+    display: block;
+    color: #737373; text-align: center;
+    margin: 0;
 }
 
 /* MEDIA
