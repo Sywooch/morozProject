@@ -138,13 +138,13 @@ $min = 500; $max = 10000;
                     <div class="wrap-item-goods">
                         <div class="item-goods">
                             <?if(!empty($g['imgname'])):?>
-                                <a href="/product/<?=$g['id']?>"><img src="/image/<?=$g['imgname']?>" alt=""/></a>
+                                <a href="/product/<?=$g['id_cat']?>/<?=$g['id']?>"><img src="/image/<?=$g['imgname']?>" alt=""/></a>
                             <?else:?>
                                 <!-- заглушка-->
-                                <a href="/product/<?=$g['id']?>"><img src="/image/p3.jpg" alt=""/></a>
+                                <a href="/product/<?=$g['id_cat']?>/<?=$g['id']?>"><img src="/image/p3.jpg" alt=""/></a>
                             <?endif;?>
 
-                            <p id="good-name" class="name-pr" data-toggle="tooltip" data-placement="top" title="<?=$g['name']?>"><a href="/product/<?=$g['id']?>"><?=$g['name']?></a></p>
+                            <p id="good-name" class="name-pr" data-toggle="tooltip" data-placement="top" title="<?=$g['name']?>"><a href="/product/<?=$g['id_cat']?>/<?=$g['id']?>"><?=$g['name']?></a></p>
                             <p class="price" id="price"><?=$g['price']?><span class="glyphicon glyphicon-ruble"></span></p>
                             <p class="status" id="status">на складе</p>
                             <div style="clear: both"></div>

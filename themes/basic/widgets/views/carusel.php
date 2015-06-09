@@ -15,8 +15,8 @@
                             <div class="slide">
                                 <div class="item-slider-home">
                                     <h1><a href="/catalog/<?=$h['id_cat']?>" class="cat_name" data-toggle="tooltip" data-placement="bottom" title="<?=$h['name_cat']?>"><?=$h['name_cat'];?></a></h1>
-                                    <a href="/product/<?=$h['id']?>" class="linkimg"><img src="/image/<?=$h['imgname']?>"></a>
-                                    <p class="name-pr" data-toggle="tooltip" data-placement="top" title="<?=$h['name']?>"><a href="/product/<?=$h['id']?>"><?=$h['name']?></a></p>
+                                    <a href="/product/<?=$h['id_cat']?>/<?=$h['id']?>" class="linkimg"><img src="/image/<?=$h['imgname']?>"></a>
+                                    <p class="name-pr" data-toggle="tooltip" data-placement="top" title="<?=$h['name']?>"><a href="/product/<?=$h['id_cat']?>/<?=$h['id']?>"><?=$h['name']?></a></p>
                                     <p class="price"><?=$h['price']?><span class="glyphicon glyphicon-ruble"></span></p>
                                     <p class="status">на складе</p>
                                     <div style="clear: both;"></div>
@@ -35,8 +35,8 @@
                             <div class="slide">
                                 <div class="item-slider-home">
                                     <h1><a href="/catalog/<?=$s['id_cat']?>" class="cat_name" data-toggle="tooltip" data-placement="bottom" title="<?=$s['name_cat']?>"><?=$s['name_cat'];?></a></h1>
-                                    <a href="/product/<?=$s['id']?>" class="linkimg"><img src="/image/<?=$s['imgname']?>"></a>
-                                    <p class="name-pr" data-toggle="tooltip" data-placement="top" title="<?=$s['name']?>"><a href="/product/<?=$s['id']?>"><?=$s['name']?></a></p>
+                                    <a href="/product/<?=$h['id_cat']?>/<?=$s['id']?>" class="linkimg"><img src="/image/<?=$s['imgname']?>"></a>
+                                    <p class="name-pr" data-toggle="tooltip" data-placement="top" title="<?=$s['name']?>"><a href="/product/<?=$h['id_cat']?>/<?=$s['id']?>"><?=$s['name']?></a></p>
                                     <p class="price"><?=$s['price']?><span class="glyphicon glyphicon-ruble"></span></p>
                                     <p class="status">на складе</p>
                                     <div style="clear: both;"></div>

@@ -1148,6 +1148,81 @@ body {
     margin: 0;
 }
 
+/* PRODUCT
+-----------------------------------------------------------------------------------------------------*/
+.wrap-product{
+    overflow: hidden; margin: 20px auto;
+}
+.wrap-images{
+    width:30%; float: left;
+}
+.wrap-product-desc{
+    width: 70%; float: left;
+}
+.home-image-product{
+    padding: 0 0 0 30px;
+}
+.home-image-product img{
+    max-width: 100%;
+}
+.images-galery{
+    margin: 20px 0;
+}
+.wrap-price-product{
+    background: #fef7de; padding: 5px 0; margin-bottom: 20px;
+}
+.wrap-price-product table{
+    width: 100%; border-collapse: collapse;
+}
+.wrap-price-product table tr td{
+    width: 33.33%;
+}
+.block-kol{
+    width: 125px; overflow: hidden; float: left;
+}
+.left-col{
+    width: 35px; height: 35px; background: #f59e00; float: left;
+}
+.mid-col{
+    width: 50px; height: 35px; float: left;
+}
+.mid-col input{
+    width: 50px; border:1px solid #f59e00; padding: 0 3px; height: 35px; text-align: center;
+}
+.mid-col input:focus{
+    outline: none;
+}
+.right-col{
+    width: 35px; height: 35px; background: #f59e00; float: left;
+}
+.col-minus, .col-plus{
+    padding: 7px 9px; color: #fff; font-size: 18px; display: block;
+}
+.col-minus:hover, .col-plus:hover,.col-minus:focus, .col-plus:focus{
+   color: #fff;
+}
+.block-kol-wrap{
+    overflow: hidden;
+}
+.block-kol-wrap h2{
+    float: left; margin: 0 5px; font-size: 21px; color:#5a1b00;padding: 8px 0 0 0;
+}
+.h2price{
+    margin: 0 5px; font-size: 21px; color:#5a1b00;
+}
+.spanPrice{
+    font-size: 28px; color:#ea8604;
+}
+.spanPrice span{
+    font-size: 21px;
+}
+.prcartBtn{
+    font-size: 24px; color:#fff; background:#ea8604; border: none; padding: 10px 35px;
+}
+.prcartBtn:focus{
+    outline: none;
+}
+
 /* MEDIA
 ------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width:1170px){

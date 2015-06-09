@@ -7,7 +7,7 @@ return array(
     'admin/catalog/view'=>'catalog/admin/catalog/view',
     'admin/catalog/update'=>'catalog/admin/catalog/update',
     'admin/catalog/delete'=>'catalog/admin/catalog/delete',
+    'product/<id_cat>/<id>'  => 'catalog/product/index',
     'catalog/<url>'  => 'catalog/default/view',
     'catalog/page/<page:\d+>'  => 'catalog/default/index',
-
 );

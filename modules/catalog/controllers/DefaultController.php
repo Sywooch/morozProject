@@ -54,8 +54,9 @@ class DefaultController extends Controller{
             $pagination = new Pagination(['totalCount' => $count, 'pageSize'=>20,'forcePageParam' => false,'pageSizeParam' => false]);
             $params = [':offset' => $pagination->offset, ':limit' => $pagination->limit];
             $models = $db->createCommand("
-                      SELECT goods.*, goods_images.imgname FROM goods
+                      SELECT goods.*, goods_images.imgname, catalog.link_cat, catalog.id_cat FROM goods
                       LEFT JOIN goods_images ON goods_images.goods_id = goods.id AND goods_images.chief = 'Y'
+                      LEFT JOIN catalog ON catalog.id_cat = goods.cat_id
                       WHERE goods.cat_id IN ($childs) LIMIT :offset,:limit
                 ")->bindValues($params)->queryAll();
 
