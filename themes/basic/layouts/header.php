@@ -3,7 +3,8 @@ use app\components\widgets\CallWidget;
 use app\components\widgets\MenuCatalogWidget;
 use app\components\widgets\MenuPagesWidget;
 use app\components\widgets\LoginWidget;
-use app\components\widgets\CartWidget;
+//use app\components\widgets\CartWidget;
+use app\modules\cart\widgets\CartWidget;
 ?>
 
 <div class="forum-header">

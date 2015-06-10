@@ -740,7 +740,7 @@ body {
     width:25%; float: left;
 }
 .item-goods{
-    height: 270px; margin: 3px; border: 1px solid #e2e2e2; padding: 10px; position: relative;
+    /*height: 290px;*/ margin: 3px; border: 1px solid #e2e2e2; padding: 10px; position: relative;
 }
 .item-goods img{
     max-width: 100%;
@@ -761,7 +761,7 @@ body {
     padding: 5px 5px; text-align: right;
 }
 .btn-buy{
-    position: absolute; bottom: 10px; right: 10px;
+    /*position: absolute; bottom: 10px; right: 10px;*/
 }
 .btn-braun{
     background: #8d340e; color: #fff;
@@ -1223,8 +1223,190 @@ body {
     outline: none;
 }
 
+/* POPUP CALL
+-------------------------------------------------------------------------------------------------------*/
+.modal-content{
+    border: 15px solid rgba(181, 117, 23, .5);
+    border-radius: 0;
+    box-shadow: none;
+}
+.modal-header{
+    padding: 13px 15px 14px; border-bottom: 1px solid #f59e00;
+}
+.modal-header h4{
+    margin: 0; color:#5a1b00; font-size: 21px; text-align: center; text-transform: uppercase;
+}
+.modal-header .close {
+    margin-top: -13px;
+    margin-right: -15px;
+}
+
+/* TEMP CART
+-------------------------------------------------------------------------------------------------------*/
+
+div.cart-default-index
+{
+    padding: 0px 30px;
+}
+.cart-button-bay{
+
+}
+
+table.cart-table-goods{
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+table.cart-table-goods tr:nth-child(odd){
+    background-color:  #f2f2f2;
+}
+table.cart-table-goods tr:nth-child(even){
+    background-color:  #fff;
+}
+table.cart-table-goods tr:hover{
+    background-color:  #fef7de;
+}
+table.cart-table-goods th{
+    font-weight: 500;
+    text-align: center;
+    padding: 8px;
+    background-color:  #fff;
+
+}
+table.cart-table-goods th.cart-name{
+    text-align: left;
+}
+table.cart-table-goods td{
+    border-top:  #e2e2e2 solid 1px;
+    margin: 5px;
+    text-align: center;
+    padding: 8px;
+}
+table.cart-table-goods td.cart-name{
+    text-align: left;
+}
+table.cart-table-goods td.cart-price,
+table.cart-table-goods td.cart-count,
+table.cart-table-goods td.cart-sum{
+    border-left:  #e2e2e2 solid 1px;
+}
+
+table.cart-table-goods tr td.cart_itogo{
+    background: #fff;
+    text-align: right;
+
+}
+
+
+table.cart-table-goods td.cart-price span.cart-price-val,
+table.cart-table-goods td.cart-sum span.cart-sum-val {
+    font-weight: 500;
+    font-size: 23px;
+    color: #8d340e;
+}
+table.cart-table-goods td.cart-price span,
+table.cart-table-goods td.cart-sum span{
+    color: #3a3939;
+    font-size: 16px;
+}
+div.cart-count-block{
+    /*width: 116px;
+    margin: 0px auto;*/
+    cursor: pointer;
+}
+div.cart-count-block a.cart_down,div.cart-count-block a.cart_up{
+    display: inline-block;
+    width: 32px;
+    height: 34px;
+    background-color: #F59E00;
+    line-height: 32px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    float: left;
+}
+div.cart-count-block a:hover,div.cart-count-block a:focus{
+    outline: none; text-decoration: none;
+}
+div.cart-count-block input{
+    width: 40px;
+    height: 34px;
+    border:  #F59E00 solid 1px;
+    margin: 0px;
+    padding: 2px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+.wrap-all-sum{
+    margin-top: 8px;
+}
+#all-sum-val{
+    color: #ea8604;
+    font-size: 26px;
+}
+.all-sum{
+    color: #5a1b00;
+    font-size: 24px;
+    display: inline-block
+}
+
+
+.cart_submit{
+    background: #f59e00; color: #fff;
+    border:1px #fff solid;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 34px;
+    padding: 4px 10px;
+}
+
+.widget-cart-baybutton .btn-buy .cart-count-block{
+
+    /*position: relative;*/
+    text-align:right;
+    /*height: 44px;*/
+    /*right: 0px;
+   top: -6px;
+*/
+}
+.btn-buy .cart-count-block{
+    /*width: 200px;*/
+    /* margin-top: 4px;*/
+}
+/*.btn-braun.cart-button-bay{
+    margin: 0px 0px 0px 5px;
+    padding: 5px 12px;
+}*/
+.btn-braun.cart-button-bay:focus{
+    outline: none;
+}
+
+.in-cart,.in-cart:active, .in-cart:focus{
+    background: green;
+    color: #fff; outline: none;
+}
+.in-cart:hover{
+    background: rgb(60, 166, 60);
+    color: #fff;
+}
+.go-to-cart{
+    position: absolute; top:20px; right: 0; background: #0088e4;
+}
+.go-to-cart a{
+    color: #fff; padding: 5px 10px; display: block;font-size: 15px;
+}
 /* MEDIA
 ------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width:1270px){
+    div.cart-count-block a.cart_down{
+       margin-left: 57px;
+    }
+    .cart-button-bay{
+        margin-top: 2px;
+    }
+}
 @media only screen and (max-width:1170px){
     .ramka{
         margin: 15px auto;

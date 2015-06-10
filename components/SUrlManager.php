@@ -24,7 +24,7 @@ class SUrlManager extends UrlManager {
         $rules = false;
         if(!$rules){
             $rules       = array();
-            $modules     = array("news","pages","catalog");
+            $modules     = array("news","pages","catalog","cart");
             $modulesPath = Yii::getAlias('@app').DIRECTORY_SEPARATOR."modules";
             foreach($modules as $module){
                 $configFilePath = implode(DIRECTORY_SEPARATOR, array($modulesPath, $module, 'config', 'routes.php'));

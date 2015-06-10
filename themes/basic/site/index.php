@@ -10,12 +10,14 @@ use yii\widgets\ActiveForm;
 <div class="forum-home">
 
     <?php if (Yii::$app->session->hasFlash('success')): ?>
-        <div class="alert alert-success">
+        <div class="alert alert-success alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <?=Yii::$app->session->getFlash('success')?>
         </div>
     <?php endif;?>
     <?php if (Yii::$app->session->hasFlash('error')): ?>
-        <div class="alert alert-danger">
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <?=Yii::$app->session->getFlash('error')?>
         </div>
     <?php endif;?>

@@ -3,6 +3,7 @@ use yii\widgets\Breadcrumbs;
 use yii\widgets\LinkPager;
 use app\components\widgets\HomePageWidget;
 use app\components\widgets\CaruselWidget;
+use app\modules\cart\widgets\BayButtonWidget;
 $this->title = 'Каталог';
 $min = 500; $max = 10000;
 ?>
@@ -148,9 +149,7 @@ $min = 500; $max = 10000;
                             <p class="price" id="price"><?=$g['price']?><span class="glyphicon glyphicon-ruble"></span></p>
                             <p class="status" id="status">на складе</p>
                             <div style="clear: both"></div>
-                            <div class="btn-buy">
-                                <button type="button" name="buy" class="btn btn-braun">Купить</button>
-                            </div>
+                            <?=BayButtonWidget::widget(['name' => 'В корзину','count' => '10','goods_id'=>$g['id']]);?>
                         </div>
                     </div>
                 <?endforeach;?>
