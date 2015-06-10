@@ -26,4 +26,5 @@ phpunit.phar
 # local phpunit config
 /phpunit.xml
 
-web/uploads
+/web/uploads
+/web/import_files
