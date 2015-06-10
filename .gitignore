@@ -28,3 +28,4 @@ phpunit.phar
 
 /web/uploads
 /web/import_files
+/config/db.php
