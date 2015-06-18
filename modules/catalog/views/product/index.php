@@ -1,6 +1,7 @@
 <?php
     use yii\widgets\Breadcrumbs;
     use app\components\widgets\CaruselWidget;
+    use app\modules\cart\widgets\BayButtonWidget;
     $this->title = $product['name'];
     $homeimg = [];
     $imggalery = [];
@@ -28,14 +29,14 @@
     <div class="wrap-images">
         <div class="home-image-product">
             <?if(count($homeimg)>0):?>
-                <a href="/image/<?=$homeimg[0]['imgname']?>" data-lightbox="image-group" data-title="<?=$homeimg[0]['desc']?>"><img src="/image/<?=$homeimg[0]['imgname']?>" alt=""/></a>
+                <a href="/<?=$homeimg[0]['imgname']?>" data-lightbox="image-group" data-title="<?=$homeimg[0]['desc']?>"><img src="/<?=$homeimg[0]['imgname']?>" alt=""/></a>
             <?else:?>
-                <img src="/image/p3.jpg" alt=""/>
+                <img src="/image/noimg.jpg" alt=""/>
             <?endif;?>
             <?if(count($imggalery)>0):?>
             <div class="images-galery">
                 <?foreach($imggalery as $im):?>
-                    <a href="/image/<?=$im['imgname']?>" data-lightbox="image-group" data-title="<?=$im['desc']?>"><img src="/image/<?=$im['imgname']?>" width="100" alt=""/></a>
+                    <a href="/<?=$im['imgname']?>" data-lightbox="image-group" data-title="<?=$im['desc']?>"><img src="/<?=$im['imgname']?>" width="100" alt=""/></a>
                 <?endforeach;?>
             </div>
             <?endif;?>
@@ -46,18 +47,9 @@
             <table>
                 <tr>
                     <td style="text-align: left; padding: 0 0 0 30px;"><h2 class="h2price">ЦЕНА: <span class="spanPrice"><?=$product['price']?><span class="glyphicon glyphicon-ruble"></span></span> </h2></td>
-                    <td>
-                        <div class="block-kol-wrap">
-                            <h2>КОЛ-ВО:</h2>
-                            <div class="block-kol">
-                                <div class="left-col"><a href="#" class="col-minus"><span class="glyphicon glyphicon-minus"></span></a></div>
-                                <div class="mid-col"><input type="text" value="1"/></div>
-                                <div class="right-col"><a href="#" class="col-plus"><span class="glyphicon glyphicon-plus"></span></a></div>
-                            </div>
-                        </div>
-                    </td>
                     <td style="text-align: right; padding: 0 30px 0 0;">
-                        <button type="button" class="prcartBtn">В КОРЗИНУ</button>
+                        <!--button type="button" class="prcartBtn">В КОРЗИНУ</button-->
+                        <div style="position: relative;"><?=BayButtonWidget::widget(['name' => 'В корзину','count' => '10','goods_id'=>$product['id']]);?></div>
                     </td>
                 </tr>
             </table>

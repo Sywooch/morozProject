@@ -11,6 +11,7 @@ return array(
     'cart/bay'  => 'cart/default/bay',
     'cart/del'  => 'cart/default/del',
     'cart/'  => 'cart/default/index',
+    'cart/issue'  => 'cart/default/issue',
 
 //    'cart/page/<page:\d+>'  => 'catalog/default/index',
 

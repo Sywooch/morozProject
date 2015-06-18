@@ -128,7 +128,7 @@ $min = 500; $max = 10000;
         </div>
         <?endif;?>
         <?php echo Breadcrumbs::widget([
-            'itemTemplate' => "<li><i>{link}</i></li>\n", // template for all links
+            'itemTemplate' => "<li><i>{link}</i></li>\n",
             'links' => $breadcrumbs,
         ]);
         ?>
@@ -139,10 +139,10 @@ $min = 500; $max = 10000;
                     <div class="wrap-item-goods">
                         <div class="item-goods">
                             <?if(!empty($g['imgname'])):?>
-                                <a href="/product/<?=$g['id_cat']?>/<?=$g['id']?>"><img src="/image/<?=$g['imgname']?>" alt=""/></a>
+                                <a class="imglink" href="/product/<?=$g['id_cat']?>/<?=$g['id']?>"><img src="/<?=$g['imgname']?>" alt=""/></a>
                             <?else:?>
                                 <!-- заглушка-->
-                                <a href="/product/<?=$g['id_cat']?>/<?=$g['id']?>"><img src="/image/p3.jpg" alt=""/></a>
+                                <a href="/product/<?=$g['id_cat']?>/<?=$g['id']?>"><img src="/image/noimg.jpg" alt=""/></a>
                             <?endif;?>
 
                             <p id="good-name" class="name-pr" data-toggle="tooltip" data-placement="top" title="<?=$g['name']?>"><a href="/product/<?=$g['id_cat']?>/<?=$g['id']?>"><?=$g['name']?></a></p>
