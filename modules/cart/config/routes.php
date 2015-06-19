@@ -12,6 +12,7 @@ return array(
     'cart/del'  => 'cart/default/del',
     'cart/'  => 'cart/default/index',
     'cart/issue'  => 'cart/default/issue',
+    'account' => 'cart/default/account',
 
 //    'cart/page/<page:\d+>'  => 'catalog/default/index',
 

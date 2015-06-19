@@ -1447,11 +1447,74 @@ div.cart-count-block input{
     display: block; margin: 10px 0;
 }
 
-.tabs-login-sign{
-    margin: 30px 0;
+.form-orders-wrap{
+    padding: 10px 30px;
 }
-.first-tb{
-    margin-left: 30px;
+.form-orders-wrap input,.form-orders-wrap select, .form-orders-wrap textarea{
+    border: 1px solid #f59e00; border-radius: 0;
+}
+.form-orders-wrap textarea{
+    resize: vertical;
+}
+.line-price{
+    background: #fef7de; margin-bottom: 30px; padding: 30px 20px; text-align: right;
+}
+.line-price h3{
+    display: inline-block; margin: 0; font-size: 21px; text-transform: uppercase; color:#5a1b00;
+    padding-right: 20px;
+}
+#dprice,#sumprice{
+    font-size: 21px; color:#ea8604;
+}
+.btn-orange{
+    background: #f59e00; color: #fff;
+}
+.forum-btn{
+    text-transform: uppercase; font-size: 21px; padding: 5px 30px; border-radius: 0;
+}
+
+/* ACCOUNT
+------------------------------------------------------------------------------------------------------*/
+.forum-account{
+    width:100%; padding: 0 0 0 30px; overflow: hidden;
+}
+.forum-account-left{
+    width:26%; float: left;
+}
+.forum-account-content{
+    width:74%; float: left;
+}
+.forum-history-orders{
+    padding: 0 0 0 30px;
+}
+.forum-history-orders h1{
+    color: #464646; margin: 0; text-transform: uppercase; font-size: 27px;
+}
+.forum-lk-header{
+    background: #fff6e0; border-top: 1px solid #f59e00; border-bottom: 1px solid #f59e00; padding: 15px 20px;
+    margin-top: 20px;
+}
+.forum-lk-header h3{
+    color:#5a1b00; font-size: 21px; margin: 0;
+}
+.forum-lk-header > h3 > img{
+    margin-right: 10px;
+}
+.wrap-tbl-orders{
+    padding: 0 30px 0 0;
+}
+.lbl-green{
+    color:#82c600;
+}
+.lbl-red{
+    color:#c6001c;
+}
+.compare-password{
+    padding: 20px 30px 0 20px; margin-bottom: 30px; width: 100%;
+}
+
+.compare-password input{
+    border: 1px solid #f59e00; border-radius: 0;
 }
 /* MEDIA
 ------------------------------------------------------------------------------------------------------*/

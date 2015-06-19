@@ -4,6 +4,7 @@ namespace app\modules\cart\controllers;
 
 use app\models\LoginForm;
 use app\models\SignupForm;
+use app\modules\cart\models\CompareUser;
 use yii\web\Controller;
 use Yii;
 use app\modules\cart\models\OrdersForm;
@@ -173,6 +174,35 @@ class DefaultController extends Controller{
         ]);
     }
 
+    /*
+     * Личный кабинет
+     */
+    public function actionAccount(){
+        if (\Yii::$app->user->isGuest) {
+            return $this->redirect('/', 302);
+        }
+
+        $db = Yii::$app->db;
+        $id_user = Yii::$app->getUser()->id;
+        $orders = $db->createCommand("SELECT * FROM orders WHERE user_id = '$id_user'")->queryAll();
+
+        $compareUserModel = new CompareUser();
+
+        if ($compareUserModel->load(Yii::$app->request->post()) && $compareUserModel->validate()) {
+            if($compareUserModel->generateNewPassword($compareUserModel->password_new)){
+                \Yii::$app->getSession()->setFlash('pass_complete', 'Пароль успешно изменен');
+                return $this->redirect('/account', 302);
+            }else{
+                \Yii::$app->getSession()->setFlash('pass_error', 'Ошибка изменения пароля');
+                return $this->redirect('/account', 302);
+            }
+        }
+
+        return $this->render('account',  [
+            'orders'=>$orders,
+            'compareUserModel'=>$compareUserModel,
+        ]);
+    }
 
 
 }

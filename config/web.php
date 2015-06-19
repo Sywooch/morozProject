@@ -8,7 +8,12 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'language' => 'ru-RU',
+
     'components' => [
+        'formatter' => [
+            'class' => 'yii\i18n\Formatter',
+            'dateFormat' => 'medium',
+        ],
         'urlManager' => [
             'class'=>'app\components\SUrlManager',
             'enablePrettyUrl' => true,
@@ -70,6 +75,7 @@ $config = [
                 'baseUrl' => '@web/themes/'.$theme,
             ],
         ],
+
     ],
     'params' => $params,
     'modules' => [
