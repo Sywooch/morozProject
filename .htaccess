@@ -1,0 +1,20 @@
+# Mod_Autoindex
+<IfModule mod_autoindex.c>
+  # Запрещаем просмотр содержимого папок
+  Options -Indexes
+</IfModule>
+
+# Mod_Rewrite
+<IfModule mod_rewrite.c>
+  Options +FollowSymlinks
+  # Включаем mod_rewrite
+  RewriteEngine On
+  IndexIgnore */*
+
+
+RewriteCond %{REQUEST_URI} !^/import/(.*)$ 
+RewriteCond %{REQUEST_URI} !^/import_upload/(.*)$
+#RewriteCond %{REQUEST_URI} !^/import_files/(.*)$
+RewriteRule ^([^/].*)?$ /web/$1 
+
+</IfModule>

@@ -1,0 +1,6 @@
+AuthType Basic
+AuthName "/www/forum.artline-studio.ru/import"
+AuthUserFile /var/www/forum/data/etc/41292579.passwd
+<Limit GET POST>
+	require valid-user
+</Limit>

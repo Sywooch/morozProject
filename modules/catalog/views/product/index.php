@@ -2,7 +2,7 @@
     use yii\widgets\Breadcrumbs;
     use app\components\widgets\CaruselWidget;
     use app\modules\cart\widgets\BayButtonWidget;
-    $this->title = $product['name'];
+    $this->title = $product[$id]['goods']['name'];
     $homeimg = [];
     $imggalery = [];
     foreach($images as $i){
@@ -21,7 +21,7 @@
 
 <div class="wrap-figura-block">
     <div class="left-figura"></div>
-    <div class="center-figura"><h1><?=$product['name']?></h1></div>
+    <div class="center-figura"><h1><?=$product[$id]['goods']['name']?></h1></div>
     <div class="right-figura"></div>
 </div>
 <div class="line-figura"></div>
@@ -46,16 +46,27 @@
         <div class="wrap-price-product">
             <table>
                 <tr>
-                    <td style="text-align: left; padding: 0 0 0 30px;"><h2 class="h2price">ЦЕНА: <span class="spanPrice"><?=$product['price']?><span class="glyphicon glyphicon-ruble"></span></span> </h2></td>
+                    <td style="text-align: left; padding: 0 0 0 30px;"><h2 class="h2price">ЦЕНА: <span class="spanPrice"><?=$product[$id]['goods']['price']?><span class="glyphicon glyphicon-ruble"></span></span> </h2></td>
                     <td style="text-align: right; padding: 0 30px 0 0;">
-                        <!--button type="button" class="prcartBtn">В КОРЗИНУ</button-->
-                        <div style="position: relative;"><?=BayButtonWidget::widget(['name' => 'В корзину','count' => '10','goods_id'=>$product['id']]);?></div>
+                        <div style="position: relative;"><?=BayButtonWidget::widget(['name' => 'В корзину','count' => '10','goods_id'=>$id]);?></div>
                     </td>
                 </tr>
             </table>
 
         </div>
-        <?=$product['description']?>
+        <?=$product[$id]['goods']['description']?>
+        <?if(count($product[$id]['params'])>0):?>
+            <div class="params-data">
+                <?foreach($product[$id]['params'] as $k=>$par):?>
+                    <h3><?=$k?></h3>
+                    <ul>
+                        <?foreach($par as $p):?>
+                            <li><?=$p[0]?></li>
+                        <?endforeach;?>
+                    </ul>
+                <? endforeach;?>
+            </div>
+        <?endif;?>
     </div>
 </div>
 

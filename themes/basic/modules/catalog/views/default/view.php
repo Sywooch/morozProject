@@ -4,107 +4,53 @@ use yii\widgets\LinkPager;
 use app\components\widgets\HomePageWidget;
 use app\components\widgets\CaruselWidget;
 use app\modules\cart\widgets\BayButtonWidget;
+use yii\helpers\Html;
+use yii\bootstrap\ActiveForm;
+
 $this->title = 'Каталог';
-$min = 500; $max = 10000;
+if(isset($_GET['minprice']) || isset($_GET['maxprice'])){
+    $min = (int)$_GET['minprice'];
+    $max = (int)$_GET['maxprice'];
+}else{
+    $min = 500; $max = 10000;
+}
+
 ?>
-
-
 
 <div class="catalog-wrap">
     <div class="catalog-wrap-filters">
         <div class="wrap-filters">
-            <form action="#" method="get">
+
+            <form action="" method="get">
                 <div class="block-form">
                     <h3>ЦЕНА</h3>
 
-                    от <input type="text" id="minCost" value="500"/>
-                    до <input type="text" id="maxCost" value="10000"/>
+                    от <input type="text" name="minprice" id="minCost" value="<?=(isset($_GET['minprice'])?$_GET['minprice']:$min)?>"/>
+                    до <input type="text" name="maxprice" id="maxCost" value="<?=(isset($_GET['maxprice'])?$_GET['maxprice']:$max)?>"/>
 
                     <div id="slider"></div>
                 </div>
-                <div class="block-form">
-                    <h3>ПРОИЗВОДИТЕЛЬ</h3>
 
-                    <div class="checkbox-modern2">
-                        <input type="checkbox" id="cd-checkbox-1" name="pr[]" value="1" checked="">
-                        <label for="cd-checkbox-1">Tarkett</label>
-                    </div>
-                    <div class="checkbox-modern2">
-                        <input type="checkbox" id="cd-checkbox-2" name="pr[]" value="2" >
-                        <label for="cd-checkbox-2">Синтерос</label>
-                    </div>
-                    <div class="checkbox-modern2">
-                        <input type="checkbox" id="cd-checkbox-3" name="pr[]" value="3" >
-                        <label for="cd-checkbox-3">Quick-Step</label>
-                    </div>
-                    <div class="checkbox-modern2">
-                        <input type="checkbox" id="cd-checkbox-4" name="pr[]" value="4">
-                        <label for="cd-checkbox-4">Aberhof</label>
-                    </div>
-                    <div class="checkbox-modern2">
-                        <input type="checkbox" id="cd-checkbox-5" name="pr[]" value="5">
-                        <label for="cd-checkbox-5">Kronostar</label>
-                    </div>
-                    <div class="checkbox-modern2">
-                        <input type="checkbox" id="cd-checkbox-6" name="pr[]" value="6">
-                        <label for="cd-checkbox-6">Premium</label>
-                    </div>
-                    <div class="checkbox-modern2">
-                        <input type="checkbox" id="cd-checkbox-7" name="pr[]" value="7">
-                        <label for="cd-checkbox-7">Floorwood</label>
-                    </div>
-                    <!--input type="checkbox" class="checkbox" id="checkbox" />
-                    <label for="checkbox">Я переключаю чекбокс</label-->
-                </div>
-                <div class="block-form">
-                    <h3>СТРАНА</h3>
-                    <div class="checkbox-modern2">
-                        <input type="checkbox" id="cd-checkbox-11" name="st[]" value="1">
-                        <label for="cd-checkbox-11">Бельгия</label>
-                    </div>
-                    <div class="checkbox-modern2">
-                        <input type="checkbox" id="cd-checkbox-12" name="st[]" value="2" >
-                        <label for="cd-checkbox-12">Германия</label>
-                    </div>
-                    <div class="checkbox-modern2">
-                        <input type="checkbox" id="cd-checkbox-13" name="st[]" value="3" >
-                        <label for="cd-checkbox-13">Россия</label>
-                    </div>
-                    <div class="checkbox-modern2">
-                        <input type="checkbox" id="cd-checkbox-14" name="st[]" value="4">
-                        <label for="cd-checkbox-14">Китай</label>
-                    </div>
-                    <div class="checkbox-modern2">
-                        <input type="checkbox" id="cd-checkbox-15" name="st[]" value="5">
-                        <label for="cd-checkbox-15">Франция</label>
-                    </div>
-                    <div class="checkbox-modern2">
-                        <input type="checkbox" id="cd-checkbox-16" name="st[]" value="6">
-                        <label for="cd-checkbox-16">Автстрия</label>
-                    </div>
-                </div>
-                <div class="block-form">
-                    <h3>ЦВЕТ</h3>
-                    <div class="checkbox-modern2">
-                        <input type="checkbox" id="cd-checkbox-21" name="cl[]" value="1">
-                        <label for="cd-checkbox-21">венге</label>
-                    </div>
-                    <div class="checkbox-modern2">
-                        <input type="checkbox" id="cd-checkbox-22" name="cl[]" value="2" >
-                        <label for="cd-checkbox-22">вишня</label>
-                    </div>
-                    <div class="checkbox-modern2">
-                        <input type="checkbox" id="cd-checkbox-23" name="cl[]" value="3" >
-                        <label for="cd-checkbox-23">орех</label>
-                    </div>
-                    <div class="checkbox-modern2">
-                        <input type="checkbox" id="cd-checkbox-24" name="cl[]" value="4">
-                        <label for="cd-checkbox-24">дуб классический</label>
-                    </div>
-                </div>
+                <?if(is_array($filters) && count($filters)>0):?>
+                    <?$key=0;?>
+                    <?foreach($filters as $k=>$fil):?>
+                        <div class="block-form">
+                            <h3><?=$fil[0]['name_spr']?></h3>
+                            <?foreach($fil as $kf=>$f):?>
+                                <div class="checkbox-modern2">
+                                    <input type="checkbox" id="cd-checkbox-<?=$key;?>" name="spr<?=$k?>[]" value="<?=$f['id_spr_data']?>" <?=(isset($_GET['spr'.$k]) && in_array($f['id_spr_data'],$_GET['spr'.$k])?"checked":'')?>>
+                                    <label for="cd-checkbox-<?=$key;?>"><?=$f['name_spr_data']?></label>
+                                </div>
+                                <?$key++?>
+                            <? endforeach;?>
+                        </div>
+                    <? endforeach;?>
+                <?endif;?>
+
+
                 <div class="btn-wrap">
-                    <button type="button" name="out" class="btn-out">СБРОСИТЬ</button>
-                    <button type="button" name="search" class="btn-search">НАЙТИ</button>
+                    <a href="/catalog/<?=$cur_cat['id_cat']?>" class="btn-out">СБРОСИТЬ</a>
+                    <button type="submit" name="search" value="search" class="btn-search">НАЙТИ</button>
                 </div>
             </form>
         </div>
@@ -139,13 +85,13 @@ $min = 500; $max = 10000;
                     <div class="wrap-item-goods">
                         <div class="item-goods">
                             <?if(!empty($g['imgname'])):?>
-                                <a class="imglink" href="/product/<?=$g['id_cat']?>/<?=$g['id']?>"><img src="/<?=$g['imgname']?>" alt=""/></a>
+                                <a class="imglink" href="/product/<?=$g['cat_id']?>/<?=$g['id']?>"><img src="/<?=$g['imgname']?>" alt=""/></a>
                             <?else:?>
                                 <!-- заглушка-->
-                                <a href="/product/<?=$g['id_cat']?>/<?=$g['id']?>"><img src="/image/noimg.jpg" alt=""/></a>
+                                <a href="/product/<?=$g['cat_id']?>/<?=$g['id']?>"><img src="/image/noimg.jpg" alt=""/></a>
                             <?endif;?>
 
-                            <p id="good-name" class="name-pr" data-toggle="tooltip" data-placement="top" title="<?=$g['name']?>"><a href="/product/<?=$g['id_cat']?>/<?=$g['id']?>"><?=$g['name']?></a></p>
+                            <p id="good-name" class="name-pr" data-toggle="tooltip" data-placement="top" title="<?=$g['name']?>"><a href="/product/<?=$g['cat_id']?>/<?=$g['id']?>"><?=$g['name']?></a></p>
                             <p class="price" id="price"><?=$g['price']?><span class="glyphicon glyphicon-ruble"></span></p>
                             <p class="status" id="status">на складе</p>
                             <div style="clear: both"></div>
@@ -173,8 +119,8 @@ $min = 500; $max = 10000;
         var minR = ".$min.";
         var maxR = ".$max.";
         $('#slider').slider({
-            min: minR,
-            max: maxR,
+            min: 500,
+            max: 10000,
             values: [minR,maxR],
             range: true,
             step:10,
@@ -192,7 +138,7 @@ $min = 500; $max = 10000;
             var value1=$('input#minCost').val();
             var value2=$('input#maxCost').val();
 
-            if (value1 < minR) { value1 = minR; $('input#minCost').val(minR)}
+            if (value1 < 500) { value1 = 500; $('input#minCost').val(500)}
 
             if(parseInt(value1) > parseInt(value2)){
                 value1 = value2;
@@ -204,8 +150,8 @@ $min = 500; $max = 10000;
         $('input#maxCost').change(function(){
             var value1=$('input#minCost').val();
             var value2=$('input#maxCost').val();
-        
-            if (value2 > maxR) { value2 = maxR; $('input#maxCost').val(maxR)}
+
+            if (value2 > 10000) { value2 = 10000; $('input#maxCost').val(10000)}
         
             if(parseInt(value1) > parseInt(value2)){
                 value2 = value1;

@@ -8,6 +8,8 @@ return array(
     'admin/catalog/update'=>'catalog/admin/catalog/update',
     'admin/catalog/delete'=>'catalog/admin/catalog/delete',
     'product/<id_cat>/<id>'  => 'catalog/product/index',
+    'catalog/find'  => 'catalog/default/find',
     'catalog/<url>'  => 'catalog/default/view',
     'catalog/page/<page:\d+>'  => 'catalog/default/index',
+
 );

@@ -161,7 +161,7 @@ class DefaultController extends Controller{
                     $session = new Session;
                     $session->open();
                     $session->remove('products');
-                    return $this->redirect('/', 302);
+                    return $this->redirect('/account', 302);
                 }
             }
         }

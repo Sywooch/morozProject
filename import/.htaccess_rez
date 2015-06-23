@@ -1,0 +1,5 @@
+AddDefaultCharset utf-8
+#AuthName 'Restricted Area'
+#AuthType Basic
+#AuthUserFile /home/a/allinpluru/.authfile
+#require user  import

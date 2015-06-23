@@ -1,0 +1,980 @@
+
+---------Импорт старт---------
+  ---31.05.2015, 19:39
+файлы: ок  ---31.05.2015, 19:39
+
+---------Импорт старт---------
+  ---31.05.2015, 19:41
+файлы: ок  ---31.05.2015, 19:41
+
+---------Импорт старт---------
+  ---31.05.2015, 19:58
+файлы: ок  ---31.05.2015, 19:58
+
+---------Импорт старт---------
+  ---31.05.2015, 20:05
+файлы: ок  ---31.05.2015, 20:05
+
+---------Импорт старт---------
+  ---31.05.2015, 20:06
+файлы: ок  ---31.05.2015, 20:06
+
+---------Импорт старт---------
+  ---31.05.2015, 20:21
+File not found  ---31.05.2015, 20:21
+error detected  ---31.05.2015, 20:21
+-----msg: Нет файла
+-----file: Z:\home\mycatalog\www\import\comMl.php,line:17
+
+---------Импорт старт---------
+  ---31.05.2015, 20:22
+файлы: ок  ---31.05.2015, 20:22
+
+---------Импорт старт---------
+  ---31.05.2015, 20:23
+файлы: ок  ---31.05.2015, 20:23
+
+---------Импорт старт---------
+  ---31.05.2015, 20:28
+файлы: ок  ---31.05.2015, 20:28
+
+---------Импорт старт---------
+  ---31.05.2015, 20:31
+файлы: ок  ---31.05.2015, 20:31
+
+---------Импорт старт---------
+  ---31.05.2015, 20:32
+файлы: ок  ---31.05.2015, 20:32
+
+---------Импорт старт---------
+  ---31.05.2015, 20:35
+файлы: ок  ---31.05.2015, 20:35
+пасринг файлов: ок  ---31.05.2015, 20:35
+
+---------Импорт старт---------
+  ---31.05.2015, 20:40
+файлы: ок  ---31.05.2015, 20:40
+пасринг файлов: ок  ---31.05.2015, 20:40
+
+---------Импорт старт---------
+  ---31.05.2015, 20:40
+файлы: ок  ---31.05.2015, 20:40
+пасринг файлов: ок  ---31.05.2015, 20:40
+
+---------Импорт старт---------
+  ---31.05.2015, 20:42
+файлы: ок  ---31.05.2015, 20:42
+пасринг файлов: ок  ---31.05.2015, 20:42
+
+---------Импорт старт---------
+  ---31.05.2015, 20:52
+файлы: ок  ---31.05.2015, 20:52
+пасринг файлов: ок  ---31.05.2015, 20:52
+резервное копирование БД: ок  ---31.05.2015, 20:52
+
+---------Импорт старт---------
+  ---31.05.2015, 21:02
+файлы: ок  ---31.05.2015, 21:02
+пасринг файлов: ок  ---31.05.2015, 21:02
+резервное копирование БД: ок  ---31.05.2015, 21:02
+
+---------Импорт старт---------
+  ---31.05.2015, 21:11
+файлы: ок  ---31.05.2015, 21:11
+пасринг файлов: ок  ---31.05.2015, 21:11
+резервное копирование БД: ок  ---31.05.2015, 21:11
+error detected  ---31.05.2015, 21:11
+-----msg: exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in Z:\home\mycatalog\www\import\import.php:214
+Stack trace:
+#0 Z:\home\mycatalog\www\import\import.php(214): PDOStatement->execute(Array)
+#1 Z:\home\mycatalog\www\import\import.php(84): Import->insert_tmp_goods(NULL)
+#2 Z:\home\mycatalog\www\import\index.php(46): Import->start()
+#3 {main}
+-----file: Z:\home\mycatalog\www\import\import.php,line:221
+
+---------Импорт старт---------
+  ---31.05.2015, 21:14
+файлы: ок  ---31.05.2015, 21:14
+пасринг файлов: ок  ---31.05.2015, 21:14
+резервное копирование БД: ок  ---31.05.2015, 21:14
+
+---------Импорт старт---------
+  ---31.05.2015, 21:15
+файлы: ок  ---31.05.2015, 21:15
+пасринг файлов: ок  ---31.05.2015, 21:15
+резервное копирование БД: ок  ---31.05.2015, 21:15
+
+---------Импорт старт---------
+  ---31.05.2015, 21:16
+файлы: ок  ---31.05.2015, 21:16
+пасринг файлов: ок  ---31.05.2015, 21:16
+резервное копирование БД: ок  ---31.05.2015, 21:16
+
+---------Импорт старт---------
+  ---31.05.2015, 21:54
+файлы: ок  ---31.05.2015, 21:54
+пасринг файлов: ок  ---31.05.2015, 21:54
+резервное копирование БД: ок  ---31.05.2015, 21:54
+Этап 1: ок  ---31.05.2015, 21:54
+error detected  ---31.05.2015, 21:54
+-----msg: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tree_pid' in 'field list'' in Z:\home\mycatalog\www\import\import.php:346
+Stack trace:
+#0 Z:\home\mycatalog\www\import\import.php(346): PDOStatement->execute()
+#1 Z:\home\mycatalog\www\import\import.php(87): Import->replic_tree()
+#2 Z:\home\mycatalog\www\import\index.php(46): Import->start()
+#3 {main}
+-----file: Z:\home\mycatalog\www\import\import.php,line:354
+
+---------Импорт старт---------
+  ---31.05.2015, 21:55
+файлы: ок  ---31.05.2015, 21:55
+пасринг файлов: ок  ---31.05.2015, 21:55
+резервное копирование БД: ок  ---31.05.2015, 21:55
+Этап 1: ок  ---31.05.2015, 21:55
+error detected  ---31.05.2015, 21:55
+-----msg: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tmp_catalog.parent_1c_id_cat' in 'field list'' in Z:\home\mycatalog\www\import\import.php:346
+Stack trace:
+#0 Z:\home\mycatalog\www\import\import.php(346): PDOStatement->execute()
+#1 Z:\home\mycatalog\www\import\import.php(87): Import->replic_tree()
+#2 Z:\home\mycatalog\www\import\index.php(46): Import->start()
+#3 {main}
+-----file: Z:\home\mycatalog\www\import\import.php,line:354
+
+---------Импорт старт---------
+  ---31.05.2015, 21:56
+файлы: ок  ---31.05.2015, 21:56
+пасринг файлов: ок  ---31.05.2015, 21:56
+резервное копирование БД: ок  ---31.05.2015, 21:56
+Этап 1: ок  ---31.05.2015, 21:56
+error detected  ---31.05.2015, 21:56
+-----msg: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 't1.descript_cat' in 'field list'' in Z:\home\mycatalog\www\import\import.php:347
+Stack trace:
+#0 Z:\home\mycatalog\www\import\import.php(347): PDOStatement->execute()
+#1 Z:\home\mycatalog\www\import\import.php(87): Import->replic_tree()
+#2 Z:\home\mycatalog\www\import\index.php(46): Import->start()
+#3 {main}
+-----file: Z:\home\mycatalog\www\import\import.php,line:354
+
+---------Импорт старт---------
+  ---31.05.2015, 21:57
+файлы: ок  ---31.05.2015, 21:57
+пасринг файлов: ок  ---31.05.2015, 21:57
+резервное копирование БД: ок  ---31.05.2015, 21:57
+Этап 1: ок  ---31.05.2015, 21:57
+
+---------Импорт старт---------
+  ---31.05.2015, 21:59
+файлы: ок  ---31.05.2015, 21:59
+пасринг файлов: ок  ---31.05.2015, 21:59
+резервное копирование БД: ок  ---31.05.2015, 21:59
+Этап 1: ок  ---31.05.2015, 21:59
+
+---------Импорт старт---------
+  ---31.05.2015, 22:05
+файлы: ок  ---31.05.2015, 22:05
+пасринг файлов: ок  ---31.05.2015, 22:05
+резервное копирование БД: ок  ---31.05.2015, 22:05
+Этап 1: ок  ---31.05.2015, 22:05
+
+---------Импорт старт---------
+  ---31.05.2015, 22:06
+файлы: ок  ---31.05.2015, 22:06
+пасринг файлов: ок  ---31.05.2015, 22:06
+резервное копирование БД: ок  ---31.05.2015, 22:06
+Этап 1: ок  ---31.05.2015, 22:06
+
+---------Импорт старт---------
+  ---31.05.2015, 22:49
+файлы: ок  ---31.05.2015, 22:49
+пасринг файлов: ок  ---31.05.2015, 22:49
+резервное копирование БД: ок  ---31.05.2015, 22:49
+Этап 1: ок  ---31.05.2015, 22:49
+Этап 2: ок  ---31.05.2015, 22:49
+error detected  ---31.05.2015, 22:49
+-----msg: exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM tmp_goods t
+                ON DUPLICATE KEY UPDATE
+                     ' at line 18' in Z:\home\mycatalog\www\import\import.php:425
+Stack trace:
+#0 Z:\home\mycatalog\www\import\import.php(425): PDOStatement->execute()
+#1 Z:\home\mycatalog\www\import\import.php(91): Import->replic_goods()
+#2 Z:\home\mycatalog\www\import\index.php(46): Import->start()
+#3 {main}
+-----file: Z:\home\mycatalog\www\import\import.php,line:437
+
+---------Импорт старт---------
+  ---31.05.2015, 22:50
+файлы: ок  ---31.05.2015, 22:50
+пасринг файлов: ок  ---31.05.2015, 22:50
+резервное копирование БД: ок  ---31.05.2015, 22:50
+Этап 1: ок  ---31.05.2015, 22:50
+Этап 2: ок  ---31.05.2015, 22:50
+error detected  ---31.05.2015, 22:50
+-----msg: exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM tmp_goods t
+                ON DUPLICATE KEY UPDATE
+                     ' at line 18' in Z:\home\mycatalog\www\import\import.php:425
+Stack trace:
+#0 Z:\home\mycatalog\www\import\import.php(425): PDOStatement->execute()
+#1 Z:\home\mycatalog\www\import\import.php(91): Import->replic_goods()
+#2 Z:\home\mycatalog\www\import\index.php(46): Import->start()
+#3 {main}
+-----file: Z:\home\mycatalog\www\import\import.php,line:437
+
+---------Импорт старт---------
+  ---31.05.2015, 22:53
+файлы: ок  ---31.05.2015, 22:53
+пасринг файлов: ок  ---31.05.2015, 22:53
+резервное копирование БД: ок  ---31.05.2015, 22:53
+Этап 1: ок  ---31.05.2015, 22:53
+Этап 2: ок  ---31.05.2015, 22:53
+error detected  ---31.05.2015, 22:53
+-----msg: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '1c_id' in 'field list'' in Z:\home\mycatalog\www\import\import.php:425
+Stack trace:
+#0 Z:\home\mycatalog\www\import\import.php(425): PDOStatement->execute()
+#1 Z:\home\mycatalog\www\import\import.php(91): Import->replic_goods()
+#2 Z:\home\mycatalog\www\import\index.php(46): Import->start()
+#3 {main}
+-----file: Z:\home\mycatalog\www\import\import.php,line:437
+
+---------Импорт старт---------
+  ---31.05.2015, 22:54
+файлы: ок  ---31.05.2015, 22:54
+пасринг файлов: ок  ---31.05.2015, 22:54
+резервное копирование БД: ок  ---31.05.2015, 22:54
+Этап 1: ок  ---31.05.2015, 22:54
+Этап 2: ок  ---31.05.2015, 22:54
+error detected  ---31.05.2015, 22:54
+-----msg: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '1c_id' in 'field list'' in Z:\home\mycatalog\www\import\import.php:425
+Stack trace:
+#0 Z:\home\mycatalog\www\import\import.php(425): PDOStatement->execute()
+#1 Z:\home\mycatalog\www\import\import.php(91): Import->replic_goods()
+#2 Z:\home\mycatalog\www\import\index.php(46): Import->start()
+#3 {main}
+-----file: Z:\home\mycatalog\www\import\import.php,line:437
+
+---------Импорт старт---------
+  ---31.05.2015, 22:54
+файлы: ок  ---31.05.2015, 22:54
+пасринг файлов: ок  ---31.05.2015, 22:54
+резервное копирование БД: ок  ---31.05.2015, 22:54
+Этап 1: ок  ---31.05.2015, 22:54
+Этап 2: ок  ---31.05.2015, 22:54
+error detected  ---31.05.2015, 22:54
+-----msg: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'g.1c_id' in 'field list'' in Z:\home\mycatalog\www\import\import.php:426
+Stack trace:
+#0 Z:\home\mycatalog\www\import\import.php(426): PDOStatement->execute()
+#1 Z:\home\mycatalog\www\import\import.php(91): Import->replic_goods()
+#2 Z:\home\mycatalog\www\import\index.php(46): Import->start()
+#3 {main}
+-----file: Z:\home\mycatalog\www\import\import.php,line:437
+
+---------Импорт старт---------
+  ---31.05.2015, 22:55
+файлы: ок  ---31.05.2015, 22:55
+пасринг файлов: ок  ---31.05.2015, 22:55
+резервное копирование БД: ок  ---31.05.2015, 22:55
+Этап 1: ок  ---31.05.2015, 22:55
+Этап 2: ок  ---31.05.2015, 22:55
+error detected  ---31.05.2015, 22:55
+-----msg: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column '1c_id' in 'IN/ALL/ANY subquery'' in Z:\home\mycatalog\www\import\import.php:427
+Stack trace:
+#0 Z:\home\mycatalog\www\import\import.php(427): PDOStatement->execute()
+#1 Z:\home\mycatalog\www\import\import.php(91): Import->replic_goods()
+#2 Z:\home\mycatalog\www\import\index.php(46): Import->start()
+#3 {main}
+-----file: Z:\home\mycatalog\www\import\import.php,line:437
+
+---------Импорт старт---------
+  ---31.05.2015, 22:57
+файлы: ок  ---31.05.2015, 22:57
+пасринг файлов: ок  ---31.05.2015, 22:57
+резервное копирование БД: ок  ---31.05.2015, 22:57
+Этап 1: ок  ---31.05.2015, 22:57
+Этап 2: ок  ---31.05.2015, 22:57
+Этап 3: ок  ---31.05.2015, 22:57
+
+---------Импорт старт---------
+  ---31.05.2015, 23:02
+файлы: ок  ---31.05.2015, 23:02
+пасринг файлов: ок  ---31.05.2015, 23:02
+резервное копирование БД: ок  ---31.05.2015, 23:02
+Этап 1: ок  ---31.05.2015, 23:02
+Этап 2: ок  ---31.05.2015, 23:02
+Этап 3: ок  ---31.05.2015, 23:02
+
+---------Импорт старт---------
+  ---10.06.2015, 13:42
+файлы: ок  ---10.06.2015, 13:42
+
+---------Импорт старт---------
+  ---10.06.2015, 13:43
+файлы: ок  ---10.06.2015, 13:43
+пасринг файлов: ок  ---10.06.2015, 13:43
+
+---------Импорт старт---------
+  ---10.06.2015, 13:44
+файлы: ок  ---10.06.2015, 13:44
+пасринг файлов: ок  ---10.06.2015, 13:44
+
+---------Импорт старт---------
+  ---10.06.2015, 13:48
+файлы: ок  ---10.06.2015, 13:48
+
+---------Импорт старт---------
+  ---10.06.2015, 13:49
+файлы: ок  ---10.06.2015, 13:49
+
+---------Импорт старт---------
+  ---10.06.2015, 13:49
+файлы: ок  ---10.06.2015, 13:49
+
+---------Импорт старт---------
+  ---10.06.2015, 13:53
+файлы: ок  ---10.06.2015, 13:53
+
+---------Импорт старт---------
+  ---10.06.2015, 14:03
+файлы: ок  ---10.06.2015, 14:03
+
+---------Импорт старт---------
+  ---10.06.2015, 14:09
+файлы: ок  ---10.06.2015, 14:09
+пасринг файлов: ок  ---10.06.2015, 14:09
+
+---------Импорт старт---------
+  ---10.06.2015, 14:09
+файлы: ок  ---10.06.2015, 14:09
+
+---------Импорт старт---------
+  ---10.06.2015, 14:28
+файлы: ок  ---10.06.2015, 14:28
+
+---------Импорт старт---------
+  ---10.06.2015, 14:29
+файлы: ок  ---10.06.2015, 14:29
+
+---------Импорт старт---------
+  ---10.06.2015, 14:30
+файлы: ок  ---10.06.2015, 14:30
+
+---------Импорт старт---------
+  ---10.06.2015, 14:31
+файлы: ок  ---10.06.2015, 14:31
+
+---------Импорт старт---------
+  ---10.06.2015, 14:33
+файлы: ок  ---10.06.2015, 14:33
+
+---------Импорт старт---------
+  ---10.06.2015, 14:33
+файлы: ок  ---10.06.2015, 14:33
+
+---------Импорт старт---------
+  ---10.06.2015, 14:34
+файлы: ок  ---10.06.2015, 14:34
+
+---------Импорт старт---------
+  ---10.06.2015, 14:35
+файлы: ок  ---10.06.2015, 14:35
+
+---------Импорт старт---------
+  ---10.06.2015, 14:35
+файлы: ок  ---10.06.2015, 14:35
+
+---------Импорт старт---------
+  ---10.06.2015, 14:35
+файлы: ок  ---10.06.2015, 14:35
+
+---------Импорт старт---------
+  ---10.06.2015, 14:36
+файлы: ок  ---10.06.2015, 14:36
+
+---------Импорт старт---------
+  ---10.06.2015, 14:37
+файлы: ок  ---10.06.2015, 14:37
+
+---------Импорт старт---------
+  ---10.06.2015, 14:37
+файлы: ок  ---10.06.2015, 14:37
+
+---------Импорт старт---------
+  ---10.06.2015, 14:39
+файлы: ок  ---10.06.2015, 14:39
+
+---------Импорт старт---------
+  ---10.06.2015, 14:39
+файлы: ок  ---10.06.2015, 14:39
+
+---------Импорт старт---------
+  ---10.06.2015, 14:39
+файлы: ок  ---10.06.2015, 14:39
+
+---------Импорт старт---------
+  ---10.06.2015, 14:40
+файлы: ок  ---10.06.2015, 14:40
+
+---------Импорт старт---------
+  ---10.06.2015, 14:41
+файлы: ок  ---10.06.2015, 14:41
+
+---------Импорт старт---------
+  ---10.06.2015, 15:31
+файлы: ок  ---10.06.2015, 15:31
+
+---------Импорт старт---------
+  ---10.06.2015, 15:35
+файлы: ок  ---10.06.2015, 15:35
+
+---------Импорт старт---------
+  ---10.06.2015, 15:36
+файлы: ок  ---10.06.2015, 15:36
+
+---------Импорт старт---------
+  ---10.06.2015, 15:36
+файлы: ок  ---10.06.2015, 15:36
+
+---------Импорт старт---------
+  ---10.06.2015, 15:37
+файлы: ок  ---10.06.2015, 15:37
+
+---------Импорт старт---------
+  ---10.06.2015, 15:37
+файлы: ок  ---10.06.2015, 15:37
+
+---------Импорт старт---------
+  ---10.06.2015, 15:39
+файлы: ок  ---10.06.2015, 15:39
+
+---------Импорт старт---------
+  ---10.06.2015, 15:40
+файлы: ок  ---10.06.2015, 15:40
+
+---------Импорт старт---------
+  ---10.06.2015, 15:40
+файлы: ок  ---10.06.2015, 15:40
+
+---------Импорт старт---------
+  ---10.06.2015, 15:41
+файлы: ок  ---10.06.2015, 15:41
+
+---------Импорт старт---------
+  ---10.06.2015, 15:41
+файлы: ок  ---10.06.2015, 15:41
+
+---------Импорт старт---------
+  ---10.06.2015, 15:42
+файлы: ок  ---10.06.2015, 15:42
+
+---------Импорт старт---------
+  ---10.06.2015, 15:44
+файлы: ок  ---10.06.2015, 15:44
+
+---------Импорт старт---------
+  ---10.06.2015, 15:51
+файлы: ок  ---10.06.2015, 15:51
+
+---------Импорт старт---------
+  ---10.06.2015, 15:52
+файлы: ок  ---10.06.2015, 15:52
+
+---------Импорт старт---------
+  ---10.06.2015, 15:53
+файлы: ок  ---10.06.2015, 15:53
+
+---------Импорт старт---------
+  ---10.06.2015, 15:53
+файлы: ок  ---10.06.2015, 15:53
+
+---------Импорт старт---------
+  ---10.06.2015, 15:53
+файлы: ок  ---10.06.2015, 15:53
+
+---------Импорт старт---------
+  ---10.06.2015, 15:54
+файлы: ок  ---10.06.2015, 15:54
+
+---------Импорт старт---------
+  ---10.06.2015, 15:54
+файлы: ок  ---10.06.2015, 15:54
+
+---------Импорт старт---------
+  ---10.06.2015, 15:54
+файлы: ок  ---10.06.2015, 15:54
+
+---------Импорт старт---------
+  ---10.06.2015, 15:56
+файлы: ок  ---10.06.2015, 15:56
+
+---------Импорт старт---------
+  ---10.06.2015, 15:56
+файлы: ок  ---10.06.2015, 15:56
+
+---------Импорт старт---------
+  ---10.06.2015, 15:57
+файлы: ок  ---10.06.2015, 15:57
+
+---------Импорт старт---------
+  ---10.06.2015, 16:03
+файлы: ок  ---10.06.2015, 16:03
+пасринг файлов: ок  ---10.06.2015, 16:03
+
+---------Импорт старт---------
+  ---10.06.2015, 16:05
+файлы: ок  ---10.06.2015, 16:05
+пасринг файлов: ок  ---10.06.2015, 16:05
+
+---------Импорт старт---------
+  ---10.06.2015, 16:06
+файлы: ок  ---10.06.2015, 16:06
+пасринг файлов: ок  ---10.06.2015, 16:06
+error detected  ---10.06.2015, 16:06
+-----msg: exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'' in C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php:225
+Stack trace:
+#0 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(225): PDOStatement->execute(Array)
+#1 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(85): Import->insert_tmp_goods(Array)
+#2 C:\php1111\OpenServer\domains\yii2shop.loc\import\index.php(46): Import->start()
+#3 {main}
+-----file: C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php,line:230
+
+---------Импорт старт---------
+  ---10.06.2015, 16:16
+файлы: ок  ---10.06.2015, 16:16
+пасринг файлов: ок  ---10.06.2015, 16:16
+error detected  ---10.06.2015, 16:16
+-----msg: exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'' in C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php:225
+Stack trace:
+#0 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(225): PDOStatement->execute(Array)
+#1 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(85): Import->insert_tmp_goods(Array)
+#2 C:\php1111\OpenServer\domains\yii2shop.loc\import\index.php(46): Import->start()
+#3 {main}
+-----file: C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php,line:230
+
+---------Импорт старт---------
+  ---10.06.2015, 16:17
+файлы: ок  ---10.06.2015, 16:17
+пасринг файлов: ок  ---10.06.2015, 16:17
+error detected  ---10.06.2015, 16:17
+-----msg: exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'' in C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php:225
+Stack trace:
+#0 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(225): PDOStatement->execute(Array)
+#1 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(85): Import->insert_tmp_goods(Array)
+#2 C:\php1111\OpenServer\domains\yii2shop.loc\import\index.php(46): Import->start()
+#3 {main}
+-----file: C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php,line:230
+
+---------Импорт старт---------
+  ---10.06.2015, 16:18
+файлы: ок  ---10.06.2015, 16:18
+пасринг файлов: ок  ---10.06.2015, 16:18
+error detected  ---10.06.2015, 16:18
+-----msg: exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'' in C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php:225
+Stack trace:
+#0 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(225): PDOStatement->execute(Array)
+#1 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(85): Import->insert_tmp_goods(Array)
+#2 C:\php1111\OpenServer\domains\yii2shop.loc\import\index.php(46): Import->start()
+#3 {main}
+-----file: C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php,line:230
+
+---------Импорт старт---------
+  ---10.06.2015, 16:19
+файлы: ок  ---10.06.2015, 16:19
+пасринг файлов: ок  ---10.06.2015, 16:19
+error detected  ---10.06.2015, 16:19
+-----msg: exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'' in C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php:225
+Stack trace:
+#0 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(225): PDOStatement->execute(Array)
+#1 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(85): Import->insert_tmp_goods(Array)
+#2 C:\php1111\OpenServer\domains\yii2shop.loc\import\index.php(46): Import->start()
+#3 {main}
+-----file: C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php,line:230
+
+---------Импорт старт---------
+  ---10.06.2015, 16:21
+файлы: ок  ---10.06.2015, 16:21
+пасринг файлов: ок  ---10.06.2015, 16:21
+
+---------Импорт старт---------
+  ---10.06.2015, 16:26
+файлы: ок  ---10.06.2015, 16:26
+пасринг файлов: ок  ---10.06.2015, 16:26
+
+---------Импорт старт---------
+  ---10.06.2015, 16:27
+файлы: ок  ---10.06.2015, 16:27
+пасринг файлов: ок  ---10.06.2015, 16:27
+
+---------Импорт старт---------
+  ---10.06.2015, 16:29
+файлы: ок  ---10.06.2015, 16:29
+пасринг файлов: ок  ---10.06.2015, 16:29
+
+---------Импорт старт---------
+  ---10.06.2015, 16:29
+файлы: ок  ---10.06.2015, 16:29
+пасринг файлов: ок  ---10.06.2015, 16:29
+error detected  ---10.06.2015, 16:29
+-----msg: exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'' in C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php:228
+Stack trace:
+#0 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(228): PDOStatement->execute(Array)
+#1 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(85): Import->insert_tmp_goods(Array)
+#2 C:\php1111\OpenServer\domains\yii2shop.loc\import\index.php(46): Import->start()
+#3 {main}
+-----file: C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php,line:237
+
+---------Импорт старт---------
+  ---10.06.2015, 16:30
+файлы: ок  ---10.06.2015, 16:30
+пасринг файлов: ок  ---10.06.2015, 16:31
+
+---------Импорт старт---------
+  ---10.06.2015, 16:32
+файлы: ок  ---10.06.2015, 16:32
+пасринг файлов: ок  ---10.06.2015, 16:32
+
+---------Импорт старт---------
+  ---10.06.2015, 16:34
+файлы: ок  ---10.06.2015, 16:34
+пасринг файлов: ок  ---10.06.2015, 16:34
+
+---------Импорт старт---------
+  ---10.06.2015, 16:38
+файлы: ок  ---10.06.2015, 16:38
+пасринг файлов: ок  ---10.06.2015, 16:38
+
+---------Импорт старт---------
+  ---10.06.2015, 16:39
+файлы: ок  ---10.06.2015, 16:39
+пасринг файлов: ок  ---10.06.2015, 16:39
+
+---------Импорт старт---------
+  ---10.06.2015, 16:40
+файлы: ок  ---10.06.2015, 16:40
+пасринг файлов: ок  ---10.06.2015, 16:40
+
+---------Импорт старт---------
+  ---10.06.2015, 16:41
+файлы: ок  ---10.06.2015, 16:41
+пасринг файлов: ок  ---10.06.2015, 16:41
+Этап 1: ок  ---10.06.2015, 16:41
+Этап 2: ок  ---10.06.2015, 16:41
+Этап 3: ок  ---10.06.2015, 16:41
+
+---------Импорт старт---------
+  ---10.06.2015, 16:41
+файлы: ок  ---10.06.2015, 16:41
+пасринг файлов: ок  ---10.06.2015, 16:41
+Этап 1: ок  ---10.06.2015, 16:41
+Этап 2: ок  ---10.06.2015, 16:41
+Этап 3: ок  ---10.06.2015, 16:41
+error detected  ---10.06.2015, 16:41
+-----msg: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'g.1c_id' in 'on clause'' in C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php:480
+Stack trace:
+#0 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(480): PDOStatement->execute()
+#1 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(95): Import->goods_img()
+#2 C:\php1111\OpenServer\domains\yii2shop.loc\import\index.php(46): Import->start()
+#3 {main}
+-----file: C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php,line:487
+
+---------Импорт старт---------
+  ---10.06.2015, 16:42
+файлы: ок  ---10.06.2015, 16:42
+пасринг файлов: ок  ---10.06.2015, 16:42
+Этап 1: ок  ---10.06.2015, 16:42
+Этап 2: ок  ---10.06.2015, 16:42
+Этап 3: ок  ---10.06.2015, 16:42
+error detected  ---10.06.2015, 16:42
+-----msg: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'g.1c_id' in 'on clause'' in C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php:480
+Stack trace:
+#0 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(480): PDOStatement->execute()
+#1 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(95): Import->goods_img()
+#2 C:\php1111\OpenServer\domains\yii2shop.loc\import\index.php(46): Import->start()
+#3 {main}
+-----file: C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php,line:487
+
+---------Импорт старт---------
+  ---15.06.2015, 15:43
+файлы: ок  ---15.06.2015, 15:43
+пасринг файлов: ок  ---15.06.2015, 15:43
+Этап 1: ок  ---15.06.2015, 15:43
+Этап 2: ок  ---15.06.2015, 15:43
+Этап 3: ок  ---15.06.2015, 15:43
+
+---------Импорт старт---------
+  ---15.06.2015, 15:46
+файлы: ок  ---15.06.2015, 15:46
+
+---------Импорт старт---------
+  ---15.06.2015, 16:38
+файлы: ок  ---15.06.2015, 16:38
+
+---------Импорт старт---------
+  ---15.06.2015, 16:40
+файлы: ок  ---15.06.2015, 16:40
+
+---------Импорт старт---------
+  ---15.06.2015, 16:40
+файлы: ок  ---15.06.2015, 16:40
+
+---------Импорт старт---------
+  ---15.06.2015, 16:41
+файлы: ок  ---15.06.2015, 16:41
+
+---------Импорт старт---------
+  ---15.06.2015, 16:46
+файлы: ок  ---15.06.2015, 16:46
+error detected  ---15.06.2015, 16:46
+-----msg: exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters' in C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php:333
+Stack trace:
+#0 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(333): PDOStatement->execute(Array)
+#1 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(66): Import->import_spr(Array)
+#2 C:\php1111\OpenServer\domains\yii2shop.loc\import\index.php(46): Import->start()
+#3 {main}
+-----file: C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php,line:348
+
+---------Импорт старт---------
+  ---15.06.2015, 16:47
+файлы: ок  ---15.06.2015, 16:47
+error detected  ---15.06.2015, 16:47
+-----msg: exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters' in C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php:334
+Stack trace:
+#0 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(334): PDOStatement->execute(Array)
+#1 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(66): Import->import_spr(Array)
+#2 C:\php1111\OpenServer\domains\yii2shop.loc\import\index.php(46): Import->start()
+#3 {main}
+-----file: C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php,line:349
+
+---------Импорт старт---------
+  ---15.06.2015, 16:49
+файлы: ок  ---15.06.2015, 16:49
+error detected  ---15.06.2015, 16:49
+-----msg: exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2d0a85aa-004c-11e5-8547-002381133003' for key 'id_1c_spr'' in C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php:333
+Stack trace:
+#0 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(333): PDOStatement->execute(Array)
+#1 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(66): Import->import_spr(Array)
+#2 C:\php1111\OpenServer\domains\yii2shop.loc\import\index.php(46): Import->start()
+#3 {main}
+-----file: C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php,line:348
+
+---------Импорт старт---------
+  ---15.06.2015, 16:50
+файлы: ок  ---15.06.2015, 16:50
+error detected  ---15.06.2015, 16:50
+-----msg: exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters' in C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php:333
+Stack trace:
+#0 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(333): PDOStatement->execute(Array)
+#1 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(66): Import->import_spr(Array)
+#2 C:\php1111\OpenServer\domains\yii2shop.loc\import\index.php(46): Import->start()
+#3 {main}
+-----file: C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php,line:348
+
+---------Импорт старт---------
+  ---15.06.2015, 16:57
+файлы: ок  ---15.06.2015, 16:57
+
+---------Импорт старт---------
+  ---16.06.2015, 16:48
+файлы: ок  ---16.06.2015, 16:48
+
+---------Импорт старт---------
+  ---17.06.2015, 13:23
+файлы: ок  ---17.06.2015, 13:23
+
+---------Импорт старт---------
+  ---17.06.2015, 13:24
+файлы: ок  ---17.06.2015, 13:24
+
+---------Импорт старт---------
+  ---17.06.2015, 13:29
+файлы: ок  ---17.06.2015, 13:29
+пасринг файлов: ок  ---17.06.2015, 13:29
+Этап 1: ок  ---17.06.2015, 13:29
+Этап 2: ок  ---17.06.2015, 13:29
+Этап 3: ок  ---17.06.2015, 13:29
+
+---------Импорт старт---------
+  ---17.06.2015, 13:29
+файлы: ок  ---17.06.2015, 13:29
+пасринг файлов: ок  ---17.06.2015, 13:29
+Этап 1: ок  ---17.06.2015, 13:29
+Этап 2: ок  ---17.06.2015, 13:29
+Этап 3: ок  ---17.06.2015, 13:29
+
+---------Импорт старт---------
+  ---17.06.2015, 13:34
+файлы: ок  ---17.06.2015, 13:34
+
+---------Импорт старт---------
+  ---17.06.2015, 13:47
+файлы: ок  ---17.06.2015, 13:47
+
+---------Импорт старт---------
+  ---17.06.2015, 14:14
+файлы: ок  ---17.06.2015, 14:14
+пасринг файлов: ок  ---17.06.2015, 14:14
+error detected  ---17.06.2015, 14:14
+-----msg: exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php:256
+Stack trace:
+#0 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(256): PDOStatement->execute(Array)
+#1 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(92): Import->insert_tmp_goods(Array)
+#2 C:\php1111\OpenServer\domains\yii2shop.loc\import\index.php(46): Import->start()
+#3 {main}
+-----file: C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php,line:276
+
+---------Импорт старт---------
+  ---17.06.2015, 14:16
+файлы: ок  ---17.06.2015, 14:16
+пасринг файлов: ок  ---17.06.2015, 14:16
+
+---------Импорт старт---------
+  ---17.06.2015, 16:21
+файлы: ок  ---17.06.2015, 16:21
+пасринг файлов: ок  ---17.06.2015, 16:21
+
+---------Импорт старт---------
+  ---17.06.2015, 16:22
+файлы: ок  ---17.06.2015, 16:22
+пасринг файлов: ок  ---17.06.2015, 16:22
+Этап 1: ок  ---17.06.2015, 16:22
+Этап 2: ок  ---17.06.2015, 16:22
+Этап 3: ок  ---17.06.2015, 16:22
+
+---------Импорт старт---------
+  ---17.06.2015, 16:22
+файлы: ок  ---17.06.2015, 16:22
+пасринг файлов: ок  ---17.06.2015, 16:22
+Этап 1: ок  ---17.06.2015, 16:22
+Этап 2: ок  ---17.06.2015, 16:22
+Этап 3: ок  ---17.06.2015, 16:22
+
+---------Импорт старт---------
+  ---17.06.2015, 17:01
+файлы: ок  ---17.06.2015, 17:01
+пасринг файлов: ок  ---17.06.2015, 17:01
+Этап 1: ок  ---17.06.2015, 17:01
+Этап 2: ок  ---17.06.2015, 17:01
+Этап 3: ок  ---17.06.2015, 17:01
+
+---------Импорт старт---------
+  ---17.06.2015, 17:29
+файлы: ок  ---17.06.2015, 17:29
+пасринг файлов: ок  ---17.06.2015, 17:29
+Этап 1: ок  ---17.06.2015, 17:29
+Этап 2: ок  ---17.06.2015, 17:29
+Этап 3: ок  ---17.06.2015, 17:30
+
+---------Импорт старт---------
+  ---17.06.2015, 17:43
+файлы: ок  ---17.06.2015, 17:43
+пасринг файлов: ок  ---17.06.2015, 17:43
+Этап 1: ок  ---17.06.2015, 17:43
+Этап 2: ок  ---17.06.2015, 17:43
+error detected  ---17.06.2015, 17:43
+-----msg: exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mp_attr_rekvizit.value' in 'field list'' in C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php:711
+Stack trace:
+#0 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(711): PDOStatement->execute()
+#1 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(123): Import->replic_goods()
+#2 C:\php1111\OpenServer\domains\yii2shop.loc\import\index.php(46): Import->start()
+#3 {main}
+-----file: C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php,line:721
+
+---------Импорт старт---------
+  ---17.06.2015, 17:44
+файлы: ок  ---17.06.2015, 17:44
+пасринг файлов: ок  ---17.06.2015, 17:44
+Этап 1: ок  ---17.06.2015, 17:44
+Этап 2: ок  ---17.06.2015, 17:44
+Этап 3: ок  ---17.06.2015, 17:45
+
+---------Импорт старт---------
+  ---17.06.2015, 18:00
+файлы: ок  ---17.06.2015, 18:00
+пасринг файлов: ок  ---17.06.2015, 18:00
+Этап 1: ок  ---17.06.2015, 18:00
+Этап 2: ок  ---17.06.2015, 18:00
+Этап 3: ок  ---17.06.2015, 18:00
+
+---------Импорт старт---------
+  ---17.06.2015, 18:03
+файлы: ок  ---17.06.2015, 18:03
+пасринг файлов: ок  ---17.06.2015, 18:03
+Этап 1: ок  ---17.06.2015, 18:03
+Этап 2: ок  ---17.06.2015, 18:03
+Этап 3: ок  ---17.06.2015, 18:04
+
+---------Импорт старт---------
+  ---18.06.2015, 12:02
+файлы: ок  ---18.06.2015, 12:02
+пасринг файлов: ок  ---18.06.2015, 12:02
+Этап 1: ок  ---18.06.2015, 12:02
+Этап 2: ок  ---18.06.2015, 12:02
+error detected  ---18.06.2015, 12:02
+-----msg: exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`yii2shop`.`orders_goods`, CONSTRAINT `FK_orders_goods_goods` FOREIGN KEY (`good_id`) REFERENCES `goods` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION)' in C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php:712
+Stack trace:
+#0 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(712): PDOStatement->execute()
+#1 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(128): Import->replic_goods()
+#2 C:\php1111\OpenServer\domains\yii2shop.loc\import\index.php(46): Import->start()
+#3 {main}
+-----file: C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php,line:726
+
+---------Импорт старт---------
+  ---18.06.2015, 12:06
+файлы: ок  ---18.06.2015, 12:06
+пасринг файлов: ок  ---18.06.2015, 12:06
+Этап 1: ок  ---18.06.2015, 12:06
+Этап 2: ок  ---18.06.2015, 12:06
+Этап 3: ок  ---18.06.2015, 12:06
+
+---------Импорт старт---------
+  ---18.06.2015, 12:22
+файлы: ок  ---18.06.2015, 12:22
+пасринг файлов: ок  ---18.06.2015, 12:22
+Этап 1: ок  ---18.06.2015, 12:22
+Этап 2: ок  ---18.06.2015, 12:22
+Этап 3: ок  ---18.06.2015, 12:22
+error detected  ---18.06.2015, 12:22
+-----msg: exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yii2shop.pict' doesn't exist' in C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php:763
+Stack trace:
+#0 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(763): PDO->exec('truncate pict')
+#1 C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php(131): Import->goods_img()
+#2 C:\php1111\OpenServer\domains\yii2shop.loc\import\index.php(46): Import->start()
+#3 {main}
+-----file: C:\php1111\OpenServer\domains\yii2shop.loc\import\import.php,line:772
+
+---------Импорт старт---------
+  ---18.06.2015, 12:24
+файлы: ок  ---18.06.2015, 12:24
+пасринг файлов: ок  ---18.06.2015, 12:24
+Этап 1: ок  ---18.06.2015, 12:24
+Этап 2: ок  ---18.06.2015, 12:24
+Этап 3: ок  ---18.06.2015, 12:24
+
+---------Импорт старт---------
+  ---18.06.2015, 12:30
+файлы: ок  ---18.06.2015, 12:30
+пасринг файлов: ок  ---18.06.2015, 12:30
+Этап 1: ок  ---18.06.2015, 12:30
+Этап 2: ок  ---18.06.2015, 12:30
+Этап 3: ок  ---18.06.2015, 12:30
+
+---------Импорт старт---------
+  ---18.06.2015, 12:31
+файлы: ок  ---18.06.2015, 12:31
+пасринг файлов: ок  ---18.06.2015, 12:31
+Этап 1: ок  ---18.06.2015, 12:31
+Этап 2: ок  ---18.06.2015, 12:31
+Этап 3: ок  ---18.06.2015, 12:31
+
+---------Импорт старт---------
+  ---18.06.2015, 12:37
+файлы: ок  ---18.06.2015, 12:37
+пасринг файлов: ок  ---18.06.2015, 12:37
+Этап 1: ок  ---18.06.2015, 12:37
+Этап 2: ок  ---18.06.2015, 12:37
+Этап 3: ок  ---18.06.2015, 12:37
+
+---------Импорт старт---------
+  ---18.06.2015, 12:50
+файлы: ок  ---18.06.2015, 12:50
+пасринг файлов: ок  ---18.06.2015, 12:50
+Этап 1: ок  ---18.06.2015, 12:50
+Этап 2: ок  ---18.06.2015, 12:50
+Этап 3: ок  ---18.06.2015, 12:50

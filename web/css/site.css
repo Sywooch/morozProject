@@ -820,7 +820,7 @@ body {
     padding: 15px 10px 10px 15px; border-bottom: 1px solid #dedede; width: 100%;
 }
 .block-form h3{
-    margin: 0 0 10px 0; font-size: 16px;
+    margin: 0 0 10px 0; font-size: 16px; text-transform: uppercase;
 }
 
 /* Ширина слайдера */
@@ -1263,6 +1263,19 @@ body {
 }
 .prcartBtn:focus{
     outline: none;
+}
+.params-data{
+    padding: 0 20px;
+}
+.params-data h3{
+    margin: 0; text-transform: uppercase; color:#5a1b00; font-size: 16px;
+    background: #fef7de; padding: 5px 10px;
+}
+.params-data ul{
+    margin: 0; padding: 0;
+}
+.params-data ul li{
+    list-style: none; padding: 3px 10px; background: #fff;
 }
 
 /* POPUP CALL
